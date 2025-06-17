@@ -34,8 +34,9 @@ Windows
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
 15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
 16. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
-17. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20PsExec%20Exploiting.md">SMB PsExec Exploiting</a> 
-18. <a href="">WinRM Exploiting</a>
+17. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20PsExec%20Exploiting.md">SMB PsExec Exploiting</a>
+18. <a href="">RDP Exploiting</a>
+19. <a href="">WinRM Exploiting</a>
 
 Linux
 
