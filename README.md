@@ -34,31 +34,31 @@ Windows
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
 15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
 16. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
-17. SMB PsExec Exploiting 
-18. WinRM Exploiting
+17. <a href="">SMB PsExec Exploiting</a> 
+18. <a href="">WinRM Exploiting</a>
 
 Linux
 
-17. CVE-2014-6271 ShellShock Exploiting 
-18.
+19. <a href="">CVE-2014-6271 ShellShock Exploiting 
+20.
 
 ---
 
 ## 🧬 Privilege Escalation
 
-16. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a> 
-17. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a> 
-18. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe</a>  
-19. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a> <br>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
+21. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a> 
+22. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a> 
+23. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe</a>  
+24. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a> <br>
+  	<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
 
 ---
 
 ## 🧰 Post-Exploitation
 
-20. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Alternate Data Stream</a> 
-21. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">Windows Password Hashes</a> 
-22. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Searching For Passwords In Windows Configuration Files</a>
+25. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Alternate Data Stream</a> 
+26. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">Windows Password Hashes</a> 
+27. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Searching For Passwords In Windows Configuration Files</a>
 
 ---
 
