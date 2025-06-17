@@ -96,6 +96,13 @@ Verrà richiesta la password e dovremmo quindi inserire quella ottenuta dalla de
 
 Questo metodo consente di ottenere un accesso completo e legittimo con l’account amministrativo, senza dover bypassare controlli ulteriori.
 
+## 7 - Autenticazione dal target
+
+Dopo che avremo trovato la password, possimao anche accedere a quel determinato utente se siamo gia dentro una sessione aperta nel target
+usando il comando <br>
+`runas.exe /user:<username> cmd` ⟶ avvia cmd con l'utente specificato <br>
+che serve per eseguire un programma o comando con le credenziali di un altro utente
+ 
 ## Conclusione
 La presenza di file Unattend.xml o Autounattend.xml con credenziali codificate rappresenta una minaccia reale in infrastrutture poco gestite. È fondamentale per le aziende eliminare questi file al termine dell’installazione automatica per non esporre l’intero dominio a rischi di compromissione.
 
