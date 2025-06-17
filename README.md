@@ -31,7 +31,7 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 
 13. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/13.%20IIS%20WebDAV%20Exploiting.md">IIS WebDAV Exploiting</a>  
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/14.%20MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
-15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/15%20CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
+15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/15.%20CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
 
 ---
 
