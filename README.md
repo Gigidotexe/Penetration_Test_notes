@@ -33,7 +33,7 @@ Windows
 13. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">WebDAV Exploiting</a>  
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
 15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
-16. BadBlue (PassTheHash)
+16. <a href="">CVE-2002-1103 BadBlue Exploiting</a>
 17. SMB PsExec Exploiting 
 18. WinRM Exploiting
 
