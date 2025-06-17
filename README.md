@@ -14,7 +14,7 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 
 ---
 
-## 🧾 Enumerazione dei Servizi
+## 🧾 Vulnerability Scanning e Enumeration
 
 5. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Enumeration.md">FTP Enumeration</a>
 6. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Enumeration.md">SMB Enumeration</a>
