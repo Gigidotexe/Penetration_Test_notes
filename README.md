@@ -7,10 +7,10 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 
 ## 🧭 Fase di Ricognizione e Scansione
 
-1. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/01.%20Passive%20Information%20Gathering.md">Passive Information Gathering</a>
-2. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/02.%20Active%20Information%20Gathering.md">Active Information Gathering</a>
-3. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/03.%20DNS%20Emumeration.md">DNS Enumeration</a>
-4. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/04.%20Nmap.md">Nmap</a>
+1. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Passive%20Information%20Gathering.md">Passive Information Gathering</a>
+2. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Active%20Information%20Gathering.md">Active Information Gathering</a>
+3. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/DNS%20Emumeration.md">DNS Enumeration</a>
+4. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Nmap.md">Nmap</a>
 
 ---
 
@@ -28,10 +28,16 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 ---
 
 ## 💥 Exploiting
-
+windows
 13. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/13.%20IIS%20WebDAV%20Exploiting.md">IIS WebDAV Exploiting</a>  
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/14.%20MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
 15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/15.%20CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
+16. BadBlue (PassTheHash)
+17. SMB PsExec Exploiting 
+18. WinRM Exploiting
+Linux
+17. CVE-2014-6271 ShellShock Exploiting 
+18.
 
 ---
 
