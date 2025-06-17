@@ -27,7 +27,7 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 
 ---
 
-## 💥 Sfruttamento delle Vulnerabilità
+## 💥 Exploiting
 
 13. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/13.%20IIS%20WebDAV%20Exploiting.md">IIS WebDAV Exploiting</a>  
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/14.%20MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
@@ -35,7 +35,7 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 
 ---
 
-## 🧬 Escalation dei Privilegi
+## 🧬 Privilege Escalation
 
 16. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/16.%20Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a> 
 17. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/17.%20Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a> 
@@ -45,7 +45,7 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 
 ---
 
-## 🧰 Tecniche Post-Exploitation
+## 🧰 Post-Exploitation
 
 20. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/20.%20Alternate%20Data%20Stream.md">Alternate Data Stream</a> 
 21. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/21.%20Windows%20Password%20Hashes.md">Windows Password Hashes</a> 
@@ -54,4 +54,3 @@ Ogni file approfondisce una fase specifica del penetration test, dalla raccolta 
 ---
 
 > ✍️ Tutti i file sono in formato Markdown e strutturati per essere chiari, ordinati e facilmente navigabili.
-"""
