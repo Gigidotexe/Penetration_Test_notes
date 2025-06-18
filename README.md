@@ -59,7 +59,7 @@ Linux
 26. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Alternate Data Stream</a> 
 27. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">Windows Password Hashes</a> 
 28. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows Configuration Files</a>
-29. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Mimikatz%20Pass%20the%20hash.md">Mimikatz PassTheHash</a>
+29. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Hasheh%20with%20Mimikatz%20and%20Kiwi.md">Dumping hashes with Mimikatz and Kiwi</a>
 ---
 
 > ✍️ Tutti i file sono in formato Markdown e strutturati per essere chiari, ordinati e facilmente navigabili.
