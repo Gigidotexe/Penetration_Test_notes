@@ -40,7 +40,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ### Linux
 19. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">CVE-2014-6271 ShellShock Exploiting 
 20. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Exploiting.md">FTP Exploting</a>
-21. <a href="">SSH Exploting</a>
+21. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Exploiting.md">SSH Exploting</a>
 22. <a href="">SAMBA Exploiting</a>
 ---
 
