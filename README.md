@@ -1,7 +1,7 @@
 # eJPT Study Notes Repository
 
 Raccolta ordinata dei miei appunti presi durante il percorso formativo per la certificazione eJPT.
-> ✍️ Tutti i file sono in formato Markdown e strutturati per essere chiari, ordinati e facilmente navigabili.
+> Tutti i file sono in formato Markdown
 
 ---
 
