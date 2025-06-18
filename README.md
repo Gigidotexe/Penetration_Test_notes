@@ -28,8 +28,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ---
 
 ## 💥 Exploiting
-Windows
-
+### Windows
 13. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">WebDAV Exploiting</a>  
 14. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20EternalBlue%20Exploiting.md">MS17-010 EternalBlue Exploiting</a>  
 15. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
@@ -38,9 +37,8 @@ Windows
 18. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20xfreerdp%20Exploiting.md">RDP Exploiting</a>
 19. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20CrackMap%20Exploiting.md">WinRM Exploiting</a>
 
-Linux
-
-19. <a href="">CVE-2014-6271 ShellShock Exploiting 
+### Linux
+19. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">CVE-2014-6271 ShellShock Exploiting 
 20.
 
 ---
