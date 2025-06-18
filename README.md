@@ -58,7 +58,7 @@ Linux
 
 26. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Alternate Data Stream</a> 
 27. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">Windows Password Hashes</a> 
-28. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Searching For Passwords In Windows Configuration Files</a>
+28. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows Configuration Files</a>
 29. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Mimikatz%20Pass%20the%20hash.md">Mimikatz PassTheHash</a>
 ---
 
