@@ -1,7 +1,6 @@
 # eJPT Study Notes Repository
 
-Questa repository raccoglie tutti gli appunti strutturati e ordinati per lo studio pratico in preparazione all’esame **eLearnSecurity Junior Penetration Tester (eJPT)**.  
-Ogni file approfondisce una fase specifica del penetration test, dalla raccolta informazioni fino all’escalation dei privilegi.
+Raccolta ordinata dei miei appunti presi durante il percorso formativo per la certificazione eJPT.
 
 ---
 
