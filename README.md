@@ -1,6 +1,7 @@
 # eJPT Study Notes Repository
 
 Raccolta ordinata dei miei appunti presi durante il percorso formativo per la certificazione eJPT.
+> ✍️ Tutti i file sono in formato Markdown e strutturati per essere chiari, ordinati e facilmente navigabili.
 
 ---
 
@@ -61,5 +62,3 @@ Linux
 28. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows Configuration Files</a>
 29. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Hasheh%20with%20Mimikatz%20and%20Kiwi.md">Dumping hashes with Mimikatz and Kiwi</a>
 ---
-
-> ✍️ Tutti i file sono in formato Markdown e strutturati per essere chiari, ordinati e facilmente navigabili.
