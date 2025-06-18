@@ -48,7 +48,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 21. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a> 
 22. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a>
-23. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Kernel%20Exploits.md">Linux Kernel Exploit</a>
+23. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Kernel%20Exploits%20(CVE-2016-5195%20Dirty%20COW).md">Linux Kernel Exploit</a>
 24. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe</a>  
 25. <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a> <br>
   	<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
