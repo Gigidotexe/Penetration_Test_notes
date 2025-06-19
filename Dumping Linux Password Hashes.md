@@ -64,6 +64,16 @@ Gli hash possono essere esportati e decifrati usando tools di cracking come:
 john --wordlist=/usr/share/wordlists/rockyou.txt hashfile
 ```
 
-oppure con hashcat, specificando l’algoritmo e il tipo di hash individuato tramite il prefisso `$`.
+oppure con il modulo di metasploit
+```
+use auxiliary/analyze/crack_linux 
+```
+
+su cui dove dev'essere impostato l'algoritmo di hashing in base al codice che si trova tra $.
+come ad esempio, se si tratta di un algoritmo `SHA-512`:
+```
+set SHA512 true
+```
+per poter eseguire automaticamente jon the ripper con determinati settaggi in base al algoritmo. 
 
 ---
