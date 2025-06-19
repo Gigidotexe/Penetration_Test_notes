@@ -76,6 +76,6 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dummping with Mimikatz and Kiwi</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PassTheHashAttack.md">Pass The Hash Attack</a>
 
-- <a href="">Dumping Linux Password Hashes</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 </pre>
 ---
