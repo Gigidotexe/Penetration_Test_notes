@@ -15,7 +15,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 ## 🧾 Enumeration and Exploitation
 <pre>
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Enumeration.md">FTP</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Enumeration.md">SMB</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Enumeration.md">SSH</a>
