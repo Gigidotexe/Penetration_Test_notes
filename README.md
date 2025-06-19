@@ -18,7 +18,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20(445-139).md">SMB (445-139)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration</a> 
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Enumeration.md">SSH</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH (22)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20Enumeration.md">RDP</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20Enumeration.md">SQL Enumeration</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20Enumeration.md">SMTP Enumeration</a> 
