@@ -28,7 +28,6 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ### Windows
 <pre>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">WebDAV Exploiting</a>  
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2019-0788%20BlueKeep%20Exploiting.md">CVE-2019-0788 BlueKeep Exploiting</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20CrackMap%20Exploiting.md">WinRM Exploiting</a>
 </pre>
