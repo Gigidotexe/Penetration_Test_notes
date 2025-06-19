@@ -64,6 +64,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Kernel%20Exploits%20(CVE-2016-5195%20Dirty%20COW).md">Linux Kernel Exploit</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CronJobs%20Missconfigurations.md">CronJobs Missconfigurations</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SUID%20Permissions%20Missconfigurations.md">SUID Permission Missconfigurations</a>
 </pre>
 
 
