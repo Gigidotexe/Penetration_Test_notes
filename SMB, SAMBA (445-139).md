@@ -1,7 +1,8 @@
 # SMB & Samba Enumeration & Exploitation
 
 **SMB (Server Message Block)** è un protocollo di rete utilizzato principalmente nei sistemi Windows per la condivisione di file, stampanti e altre risorse. <br>
-**Samba** è la sua implementazione libera in ambiente Linux/Unix, consentendo l’interoperabilità tra Windows e Linux. Entrambi operano sulle porte `445/TCP` (moderno) e `139/TCP` (legacy via NetBIOS). SMB/Samba è spesso abilitato di default, rendendolo un obiettivo comune durante un penetration test.
+**Samba** è la sua implementazione libera in ambiente Linux/Unix, consentendo l’interoperabilità tra Windows e Linux. <br>
+Entrambi operano sulle porte `445/TCP` (moderno) e `139/TCP` (legacy via NetBIOS). SMB/Samba è spesso abilitato di default, rendendolo un obiettivo comune durante un penetration test.
 
 ---
 
