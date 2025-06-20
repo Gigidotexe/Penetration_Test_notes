@@ -23,7 +23,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 ShellShock    (80)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA                         (445-139)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP                               (3389)</a> 
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20Enumeration.md">SQL Enumeration</a> 
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL Enumeration                   (3306)</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20Enumeration.md">SMTP Enumeration</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20(5985-5986).md">WinRM                             (5985-5986)</a>
 </pre>
