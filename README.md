@@ -21,8 +21,9 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 ShellShock</a>
-<a href="">SNMP                              (161-162)</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP                              (161-162)</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA                         (445-139)</a>
+<a href="">SMB Replay</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP                               (3389)</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL Enumeration                   (3306)</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20(25-465-587).md">SMTP Enumeration                  (25-465-587)</a> 
