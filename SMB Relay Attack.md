@@ -38,7 +38,7 @@ Configurazioni necessarie:
 - `SMBHOST` ⟶ l’IP del server SMB target a cui inoltrare l’autenticazione.
 - `LHOST` ⟶ IP dell’ascoltatore della macchina attaccante (per reverse shell).
 
-Dopo la configurazione si esegue l’exploit per avviare l’attacco.
+Dopo aver eseguito l'exploit, il modulo si mette in attesa e nel momento in cui la macchina attaccante riceverà una richiesta di connessione a un server SMB, il modulo smb_relay prenderà la richiesta di autenticazione NTLM e la inoltrerà verso il server SMB cosí da ottenere una sessione come se fossimo la macchina vittima. 
 
 ---
 
@@ -60,7 +60,7 @@ dnsspoof -i eth1 -f dns
 - `-i eth1` ⟶ specifica l’interfaccia da usare per il listening (es. eth1).
 - `-f dns` ⟶ indica il file contenente i record DNS falsificati.
 
-Questo avvia il processo di DNS Spoofing sulla rete.
+Questo avvia il processo di DNS Spoofing sulla rete che, nel momento in cui verrá ricevuta una richiesta per risolvere l'indirizzo di un dominio o sottodominio del server SMB(sportsfoo.com) verrá indicato che quell'dominio ha come indirizzo IP quello dell'attaccante, cosí da ricevere la richiesta di autenticazione da parte della vittima da poter inoltrare al server SMB tramite il modulo `smb_replay` in attesa.
 
 ---
 
@@ -87,16 +87,14 @@ Nel secondo terminale (comunicazione inversa):
 ```bash
 arpspoof -i eth1 -t <gatewayIP> <targetIP>
 ```
-Questo configura un **MITM bidirezionale**, in cui la macchina Kali si interpone tra vittima e gateway.
+Questo configura un **MITM bidirezionale**, in cui la macchina Kali si interpone tra vittima e gateway e funziona nel caso in cui la richiesta per l'autenticazione per il server SMB debba pasare per il gateway cosí da poterla intercettare e inviare la richiesta al server SMB tramite il modulo `smb_replay` in attesa.
 
 ---
 
 ## Comportamento del Relay
-
-Ogni volta che la vittima tenta di connettersi a un dominio SMB (es. `\sportsfoo.com`), il DNS spoof redireziona la richiesta verso la macchina Kali. 
-
-Il modulo Metasploit `smb_relay` intercetta la connessione SMB, acquisisce l’hash NTLM, lo inoltra al server SMB configurato e se l’attacco ha successo, si ottiene una sessione `Meterpreter` sul sistema bersaglio.
-
-Questa catena di attacco è efficace **senza dover craccare l’hash NTLM**, sfruttando semplicemente la fiducia implicita tra sistemi sulla rete.
+Tutto gira intorno al modulo `smb_replay` che rimane in attesa di una richiesta di aunteticazione NTLM da inoltrare al server SMB.
+Per poter aumentare le porbabilità che la richiesta venga inviata alla macchina kali, usiamo `dnsspoof` per intercettare la richiesta dns da parte della vittima nel caso in cui non avesse in cache l'indirizzo IP del server SMB.
+Se invece il server SMB si dovesse trovare fuori dalla sottorete della macchina vittima, la macchina vittima dovrá effettuare una richiesta verso il gateway che impersonificheremmo grazie al `arpspoof`. 
+Se volessimo aumentare ancora di piú le probabilitá, dovremmo configurare un `arpspoof` in modo da impersonificare il server SMB. 
 
 ---
