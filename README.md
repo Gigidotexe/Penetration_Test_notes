@@ -16,20 +16,19 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ## 🧾 Enumeration and Exploitation
 <pre>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20(445-139).md">SMB (445-139)</a>
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH (22)</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20(445-139).md">SMB (445-139)</a>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP (3389)</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20Enumeration.md">SQL Enumeration</a> 
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20Enumeration.md">SMTP Enumeration</a> 
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20Enumeration.md">WinRM Enumeration</a>
+- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20(5985-5986).md">WinRM (5985-5986)</a>
 </pre>
 
 ### Windows
 <pre>
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">WebDAV Exploiting</a>  
 - <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
-- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20CrackMap%20Exploiting.md">WinRM Exploiting</a>
 </pre>
 
 ### Linux
