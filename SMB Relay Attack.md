@@ -92,9 +92,9 @@ Questo configura un **MITM bidirezionale**, in cui la macchina Kali si interpone
 ---
 
 ## Comportamento del Relay
-Tutto gira intorno al modulo `smb_replay` che rimane in attesa di una richiesta di aunteticazione NTLM da inoltrare al server SMB.
-Per poter aumentare le porbabilità che la richiesta venga inviata alla macchina kali, usiamo `dnsspoof` per intercettare la richiesta dns da parte della vittima nel caso in cui non avesse in cache l'indirizzo IP del server SMB.
-Se invece il server SMB si dovesse trovare fuori dalla sottorete della macchina vittima, la macchina vittima dovrá effettuare una richiesta verso il gateway che impersonificheremmo grazie al `arpspoof`. 
-Se volessimo aumentare ancora di piú le probabilitá, dovremmo configurare un `arpspoof` in modo da impersonificare il server SMB. 
+Tutto gira intorno al modulo `smb_replay` che rimane in attesa di una richiesta di aunteticazione NTLM da inoltrare al server SMB. <brt>
+Per poter aumentare le porbabilità che la richiesta venga inviata alla macchina kali, usiamo `dnsspoof` per intercettare la richiesta dns da parte della vittima nel caso in cui non avesse in cache l'indirizzo IP del server SMB. <br>
+Se invece il server SMB si dovesse trovare fuori dalla sottorete della macchina vittima, la macchina vittima dovrá effettuare una richiesta verso il gateway che impersonificheremmo grazie al `arpspoof`. <br> 
+Se volessimo aumentare ancora di piú le probabilitá, dovremmo configurare un `arpspoof` in modo da impersonificare il server SMB per evitare che la richiesta non venga inviata verso la macchina kali se la vittima dovesse avere già l'indirizzo IP del server SMB al momento del lancio dell'attacco. 
 
 ---
