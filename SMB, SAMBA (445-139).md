@@ -27,7 +27,7 @@ Per analizzare NetBIOS possiamo usare `nbtscan`, uno scanner leggero per identif
 
 ## Fase 1 – Scansione e Identificazione del Servizio
 
-Per rilevare la presenza del servizio SMB/Samba e identificare la versione:
+Per rilevare la presenza del servizio SMB/Samba e identificarne la versione:
 
 `nmap -sV -p139,445 <target>` ⟶ rileva SMB sulle porte NetBIOS e SMB Direct
 
@@ -41,6 +41,8 @@ Script NSE utili:
 
 Con Metasploit:
 - `use auxiliary/scanner/smb/smb_version` ⟶ verifica versione SMB
+- `use auxiliary/scanner/smb/smb_enum_users` ⟶ enumerazione utenti
+- `use auxiliary/scanner/smb/smb_enumshares` ⟶ enumerazione condivisioni
 - `use auxiliary/scanner/smb/smb_ms17_010` ⟶ verifica vulnerabilità EternalBlue
 
 Per cercare exploit relativi:
@@ -169,5 +171,3 @@ Comandi utili:
 - `wget smb://<IP>`
 - `curl smb://<IP>`
 - `lftp <IP>`
-
----
