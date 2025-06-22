@@ -114,7 +114,7 @@ Il Metasploit Framework è suddiviso in diverse **categorie di moduli**, ciascun
 - **Payload**: codice che viene eseguito sul sistema target dopo che l’exploit ha avuto successo. <br>
 - **Encoder**: moduli che permettono di **offuscare il payload**, aiutando ad evitare il rilevamento da parte degli antivirus. <br>
 - **NOP Generator**: garantisce che il payload abbia una dimensione coerente e stabile inserendo "No Operation Instructions". <br>
-- **Ausiliary Modules**: moduli non legati a payload o exploit, utilizzati per **scansioni**, **enumerazioni**, **attacchi DoS**, **sniffing**, **brute-force** ecc. <br>
+- **Ausiliary Modules**: moduli non legati a payload o exploit, utilizzati per **scansioni**, **enumerazioni**, **attacchi DoS**, **sniffing**, **brute-force**, **port scanning**, o per operazioni svolte in contesti dove si è già all'interno della rete bersaglio. Questi moduli, infatti, sono utilissimi quando si ha accesso a una macchina compromessa in una rete interna, permettendo di eseguire analisi locali senza dipendere da strumenti esterni come Nmap. <br>
 
 ### Tipologie di Payload
 
@@ -237,3 +237,28 @@ Il comando `connect` in Metasploit è simile a `telnet` o `nc`. Serve per connet
 connect <IP> <porta>
 ```
 È utile ad esempio per testare banner o protocolli senza dover usare un modulo automatizzato.
+
+---
+
+## Port Scanning e Nmap in Metasploit
+
+Metasploit supporta due modalità di integrazione con Nmap:
+
+1. **Importazione delle scansioni**: dopo aver eseguito una scansione Nmap, possiamo esportare i risultati in formato XML:
+```bash
+nmap <IP> -oX output.xml
+```
+E importarli in Metasploit:
+```bash
+db_import <path_output.xml>
+```
+
+2. **Scansione diretta via db_nmap**: eseguendo direttamente la scansione dentro Metasploit, i dati verranno salvati automaticamente nel database:
+```bash
+db_nmap -sV -Pn 192.168.1.0/24
+```
+
+Una volta completata una scansione (via `db_nmap` o `db_import`), possiamo visualizzare:
+- `hosts` ⟶ lista degli host scoperti.
+- `services` ⟶ porte, protocolli e servizi rilevati.
+- `vulns` ⟶ vulnerabilità associate agli host.
