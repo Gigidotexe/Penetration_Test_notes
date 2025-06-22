@@ -79,6 +79,33 @@ db_status
 
 ---
 
+## Gestione dei Workspace
+
+In Metasploit, un **workspace** è un ambiente isolato dove vengono memorizzati tutti i dati raccolti durante un test, come host, vulnerabilità, credenziali e risultati delle scansioni. 
+Il workspace di default è chiamato `default`, ma è altamente consigliato creare un workspace separato per ogni test o cliente.
+
+Tutti i dati dei workspace sono memorizzati dentro al **MSFDB**.
+
+Comandi principali:
+```bash
+workspace                # mostra il workspace attuale e quelli disponibili
+workspace -a <nome>     # crea un nuovo workspace e ci sposta dentro
+workspace <nome>        # cambia workspace
+workspace -d <nome>     # elimina un workspace
+workspace -r <vecchio> <nuovo>  # rinomina un workspace
+```
+Per visualizzare la documentazione del comando:
+```bash
+workspace -h
+```
+
+Comando utile:
+```bash
+hosts    # mostra gli host salvati nel database del workspace corrente
+```
+
+---
+
 ## Architettura del Framework
 
 Il Metasploit Framework è suddiviso in diverse **categorie di moduli**, ciascuna con uno scopo preciso:
