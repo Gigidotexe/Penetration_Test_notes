@@ -124,4 +124,89 @@ All’interno troviamo diverse directory, tra cui:
 - `lib/` ⟶ librerie Ruby utilizzate per il funzionamento interno del framework. <br>
 - `plugins/` ⟶ plugin opzionali che possono estendere le capacità del framework (es. connessione a database o supporto a nuove tecnologie). <br>
 
-Questo design modulare rende Metasploit altamente personalizzabile e estendibile per test di sicurezza complessi o specifici.
+---
+
+## Fundamentals e Uso Pratico
+
+Per poter utilizzare qualsiasi modulo in Metasploit, è essenziale **impostare correttamente le variabili richieste**, tra cui:
+
+- `LHOST` ⟶ IP della macchina attaccante. <br>
+- `LPORT` ⟶ porta su cui l’attaccante riceve la connessione dal target. <br>
+- `RHOST` ⟶ IP del target. <br>
+- `RHOSTS` ⟶ elenco di IP da attaccare (utile per attacchi multipli). <br>
+- `RPORT` ⟶ porta del servizio da attaccare sul target. <br>
+
+Per interagire con Metasploit:
+- Pulire il terminale con `Ctrl + L`. <br>
+- Scrivere `help` nella console per visualizzare tutti i comandi disponibili. <br>
+
+Per cercare moduli o funzionalità:
+```bash
+search <parola_chiave>
+```
+Esempio:
+```bash
+search portscan
+```
+
+Per selezionare un modulo:
+```bash
+use <nome_modulo>
+```
+
+Per visualizzare le opzioni richieste da un modulo:
+```bash
+show options
+```
+
+Per impostare una variabile:
+```bash
+set RHOST 192.168.1.25
+```
+
+Per rimuovere una variabile:
+```bash
+unset RHOST
+```
+
+Per avviare un modulo dopo aver impostato tutto:
+```bash
+run
+# oppure
+exploit
+```
+
+Il comando `search` può essere raffinato con parametri:
+```bash
+search cve:2017 type:exploit
+```
+Per visualizzare le opzioni disponibili:
+```bash
+search -h
+```
+
+Per visualizzare i payload disponibili:
+```bash
+show payloads
+```
+E impostarne uno:
+```bash
+set payload <nome_payload>
+```
+
+Per monitorare le sessioni attive:
+```bash
+sessions
+```
+Per interagire con una specifica sessione:
+```bash
+sessions -i <ID_sessione>
+```
+
+### Comando `connect`
+
+Il comando `connect` in Metasploit è simile a `telnet` o `nc`. Serve per connettersi manualmente a una porta di un host remoto e verificare se è aperta o interagire direttamente con il servizio:
+```bash
+connect <IP> <porta>
+```
+È utile ad esempio per testare banner o protocolli senza dover usare un modulo automatizzato.
