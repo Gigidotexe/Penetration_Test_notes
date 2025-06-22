@@ -34,6 +34,51 @@ Metasploit è accessibile attraverso:
 
 ---
 
+## Installazione
+
+**Metasploit Framework** è distribuito da Rapid7 e può essere scaricato e installato come pacchetto standalone sia su **Windows** che su **Linux**. 
+Generalmente, per i penetration tester, viene utilizzato all’interno di **Kali Linux**, dove è già preinstallato. 
+
+Per installarlo manualmente su una distribuzione Linux:
+```bash
+sudo apt-get update && sudo apt-get install metasploit-framework
+```
+
+Una volta completata l’installazione, è necessario configurare il database PostgreSQL:
+```bash
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+sudo systemctl status postgresql
+```
+
+---
+
+## MSF Database (MSFDB)
+
+**MSFDB** è il database interno di Metasploit usato per memorizzare tutti i dati generati durante il penetration test, come risultati di scansione, vulnerabilità identificate, host scoperti, ecc. 
+È basato su **PostgreSQL** e ne richiede l’esecuzione e la corretta configurazione per funzionare. 
+
+Il database facilita anche l’importazione dei dati provenienti da altri strumenti di terze parti come **Nmap** o **Nessus**.
+
+Per inizializzarlo:
+```bash
+sudo msfdb init
+```
+In caso di problemi:
+```bash
+sudo msfdb reinit
+```
+Per verificarne lo stato:
+```bash
+sudo msfdb status
+```
+Oppure direttamente dalla MSFconsole:
+```bash
+db_status
+```
+
+---
+
 ## Architettura del Framework
 
 Il Metasploit Framework è suddiviso in diverse **categorie di moduli**, ciascuna con uno scopo preciso:
@@ -59,7 +104,7 @@ Questo tipo è molto usato perché riduce le dimensioni iniziali dell’exploit 
 **Meterpreter** (Meta-Interpreter) è un **payload avanzato** incluso nel Metasploit Framework, noto per la sua versatilità e furtività. <br>
 Una volta eseguito sul sistema target:
 
-- Risiede **solo in memoria**(RAM), quindi non lascia tracce sul disco rendendosi difficile da individuare. <br>
+- Risiede **solo in memoria** (RAM), quindi non lascia tracce sul disco rendendosi difficile da individuare. <br>
 - Permette di **eseguire comandi sul target**, **esfiltrare file**, **attivare keylogger**, **catturare screenshot**, e molto altro. <br>
 - Supporta il **pivoting** e l’**escalation di privilegi**. <br>
 - Può caricare script di estensione per interagire con il sistema Windows in maniera più profonda (es. dumping di hash, token impersonation). <br>
