@@ -19,7 +19,7 @@ Se la versione è obsoleta, puoi cercare vulnerabilità note:
 
 Script Metasploit utili:
 - `use auxiliary/scanner/ssh/ssh_version` → rileva la versione SSH
-- `use auxiliary/scanner/ssh/ssh_enumusers` → enumera utenti sulla base del timing delle risposte
+- `use auxiliary/scanner/ssh/ssh_enumusers` → enumera utenti sulla base del timing delle risposte e generalmente trova più utenti rispetto al bruteforce. 
 
 ---
 
