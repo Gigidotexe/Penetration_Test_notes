@@ -28,6 +28,8 @@ use auxiliary/scanner/http/http_version    # identifica la versione del server H
 use auxiliary/scanner/http/http_header     # estrae gli header HTTP per ottenere informazioni su configurazione e tecnologia
 ```
 
+> Estraendo gli header HTTP è possibile rilevare componenti lato server, comportamenti di redirect, tecnologie backend e potenziali vulnerabilità note associate alle versioni individuate.
+
 ---
 
 ## Fingerprinting con WhatWeb e Wappalyzer
@@ -118,7 +120,7 @@ Se il server è Apache:
 ```bash
 use auxiliary/scanner/http/apache_userdir_enum
 ```
-> Serve a identificare utenti validi. L’output può essere salvato in un file e usato nel modulo `http_login` per ottimizzare il brute force.
+> Questo modulo cerca directory `~username` valide. L’output può essere salvato in un file e usato nel modulo `http_login` per ottimizzare il brute force.
 
 ---
 
@@ -129,6 +131,8 @@ Se è presente una funzione di upload:
 - Verifica se i file caricati sono accessibili pubblicamente.
 - Controlla la validazione su estensione, MIME e contenuto.
 
+Un upload vulnerabile può portare a **Remote Code Execution** o shell inversa.
+
 ---
 
 ## Tecniche Manuali
@@ -137,46 +141,71 @@ Se è presente una funzione di upload:
 
 Analizza il codice HTML:
 - Commenti nascosti (`<!-- -->`)
-- Path o endpoint JS (`fetch("/admin/api")`)
-- Form nascosti o parametri (`action="/hidden"`)
+- Path o endpoint JS (`fetch("/api/hidden")`)
+- Campi nascosti, form sospetti, path non visibili
 
 ### DevTools
 
 Analizza:
 - Header HTTP
-- Cookie (`HttpOnly`, `Secure`, `SameSite`)
-- Richieste AJAX
+- Cookie: `Secure`, `HttpOnly`, `SameSite`
+- Parametri GET/POST nelle chiamate AJAX
 
 ---
 
-## Nikto
+## Scansione con Nikto
 
-Scanner automatico per vulnerabilità:
 ```bash
 nikto -h <URL>
 ```
-Cerca file deprecati, directory comuni, problemi noti.
+
+Nikto individua:
+- File deprecati o nascosti
+- Problemi di configurazione
+- Versioni vulnerabili
 
 ---
 
-## Nmap NSE Script
+## Nmap – HTTP NSE Script
 
 ```bash
-nmap --script http-title <IP>         # titolo della pagina
-nmap --script http-enum <IP>          # directory comuni
-nmap --script http-methods <IP>       # metodi HTTP supportati
-nmap --script http-headers <IP>       # header HTTP
+nmap --script http-title <IP>        # titolo della pagina
+nmap --script http-enum <IP>         # directory comuni
+nmap --script http-methods <IP>      # metodi HTTP disponibili
+nmap --script http-headers <IP>      # header di risposta
 ```
 
 ---
 
-## Considerazioni Finali
+## Vulnerability Scanning con WMAP (Metasploit)
 
-L’enumerazione HTTP può rivelare informazioni cruciali, tra cui:
+**WMAP** è un modulo di Metasploit dedicato alla scansione di vulnerabilità web. Va caricato manualmente:
 
-- Path a script interni
-- API non documentate
-- Credenziali nei commenti
-- File `.bak`, `.old`, `.zip` scaricabili
+```bash
+load wmap
+```
 
-Le applicazioni web sono uno dei vettori più comuni per l’accesso iniziale in un attacco. Una buona fase di enumerazione può portare all’escalation dei privilegi o all’accesso completo.
+Per aggiungere un target:
+```bash
+wmap_sites -a <IP>             # aggiunge il sito alla lista
+wmap_targets -l                # mostra i target aggiunti
+wmap_targets -h                # spiega tutte le opzioni disponibili
+```
+
+Per definire un target specifico:
+```bash
+wmap_targets -t http://<IP>
+```
+
+Per avviare la scansione:
+```bash
+wmap_run
+```
+
+> La scansione verrà eseguita in ordine partendo dal primo target in lista. Una volta terminate le analisi, WMAP mostrerà anche quali moduli di Metasploit possono essere usati per effettuare attacchi exploit sugli elementi vulnerabili individuati.
+
+Esempio:
+> Se WMAP identifica una directory vulnerabile all'upload arbitrario, potresti sfruttarla con il modulo:  
+> `exploit/unix/webapp/php_upload_exec`
+
+---
