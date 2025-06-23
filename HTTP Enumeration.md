@@ -1,6 +1,6 @@
 # HTTP Enumeration
 
-Il protocollo HTTP (HyperText Transfer Protocol) è lo standard su cui si basa il web. Durante un penetration test, l’enumerazione HTTP è fondamentale per scoprire:
+Il protocollo **HTTP (HyperText Transfer Protocol)** è lo standard su cui si basa il web. Durante un penetration test, l’enumerazione HTTP è fondamentale per scoprire:
 
 - Quali tecnologie e framework web sono in uso.
 - Quali directory o file nascosti sono accessibili.
@@ -10,133 +10,173 @@ Il protocollo HTTP (HyperText Transfer Protocol) è lo standard su cui si basa i
 
 Le porte più comuni per servizi web sono `80` (HTTP) e `443` (HTTPS), ma molti siti girano anche su `8080`, `8443`, `8000` e altre porte non standard.
 
-## Identificazione iniziale
+---
+
+## Identificazione Iniziale
 
 La prima fase consiste nel visitare manualmente l’host nel browser o tramite `curl`:
+```bash
+curl -I <target>          # mostra gli header HTTP (inclusi server, cookie, redirect)
+curl -k https://<target>  # ignora errori di certificato SSL
+```
 
-- `curl -I <target>` → mostra gli header HTTP (inclusi server, cookie, redirect)
-- `curl -k https://<target>` → ignora errori di certificato SSL
+L’header `Server` può rivelare il software in uso (es. `Apache`, `nginx`, `IIS`) e la versione, utile per correlare CVE. Alcuni server restituiscono anche l’header `X-Powered-By` (es. `PHP/5.6.40`, `ASP.NET`).
 
-L’header `Server` può rivelare il software in uso (es. `Apache`, `nginx`, `IIS`) e la versione, utile per correlare CVE. Alcuni server restituiscono anche header `X-Powered-By` (es. `PHP/5.6.40`, `ASP.NET`).
+Con Metasploit, è possibile utilizzare moduli ausiliari:
+```bash
+use auxiliary/scanner/http/http_version    # identifica la versione del server HTTP
+use auxiliary/scanner/http/http_header     # estrae gli header HTTP per ottenere informazioni su configurazione e tecnologia
+```
 
-## WhatWeb e Wappalyzer
+---
 
-Strumenti per il fingerprinting del sito:
+## Fingerprinting con WhatWeb e Wappalyzer
 
-- `whatweb <URL>` → identifica CMS, tecnologie, versioni.
-- `wappalyzer` (estensione browser) → mostra librerie JS, linguaggi backend, framework, analytics, ecc.
+Strumenti per identificare CMS, framework e tecnologie usate dal sito:
+```bash
+whatweb <URL>
+```
+`wappalyzer` è disponibile come estensione del browser e mostra librerie JS, linguaggi backend, analytics e altro.
 
-Utile per sapere se stai affrontando un WordPress, Joomla, Laravel, Django, Tomcat, ecc.
+---
 
-## Directory Brute Force
+## Enumerazione delle Directory
 
-Tecnica fondamentale per trovare directory nascoste, pannelli admin, file di backup.
+### Robots.txt
 
-### Gobuster
+Spesso accessibile via:
+```bash
+http://<target>/robots.txt
+```
 
-- `gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txt -t 50`
-
-Parametri:
-
-- `-u`: URL
-- `-w`: wordlist
-- `-t`: numero di thread (default 10)
-
-Supporta anche fuzzing di estensioni:
-
-- `-x php,txt,bak`
-
-### Dirb
-
-- `dirb http://<target> /usr/share/wordlists/dirb/common.txt`
-
-Simile a Gobuster, meno veloce ma con output più leggibile.
-
-### Ffuf
-
-- `ffuf -u http://<target>/FUZZ -w <wordlist>`
-
-Molto flessibile per fuzzing avanzato (form, parametri, host, ecc.)
-
-## Robots.txt
-
-Accessibile via `http://<target>/robots.txt`, è spesso usato per indicare ai crawler cosa non indicizzare. Gli attaccanti lo consultano per trovare directory "riservate".
-
-Esempio:
-
+Contiene percorsi che il creatore del sito non vuole siano indicizzati. Spesso questi path nascondono directory riservate:
+```text
 User-agent: *
 Disallow: /admin/
 Disallow: /backup/
+```
 
-Queste path possono essere testate direttamente.
+Con Metasploit:
+```bash
+use auxiliary/scanner/http/http_robots_txt
+```
 
-## CMS e pannelli noti
+Dopo aver identificato una directory:
+```bash
+curl http://<IP>/<directory>
+```
 
-Identificato il CMS (es. WordPress), si possono usare tool specifici:
+### Directory e File Brute Forcing
 
-- `wpscan --url <URL>` → vulnerabilità note, utenti, plugin
-- `droopescan scan drupal -u <URL>`
-- `joomscan` per Joomla
+#### Metasploit:
+```bash
+use auxiliary/scanner/http/dir_scanner      # directory brute force
+use auxiliary/scanner/http/files_dir        # file brute force, definibile per estensione
+```
 
-Verifica anche la presenza di `/admin`, `/login`, `/phpmyadmin`, `/wp-login.php`, ecc.
+#### Gobuster
+```bash
+gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txt -t 50 -x php,txt,bak
+```
 
-## Webshell e file upload
+#### Dirb
+```bash
+dirb http://<target> /usr/share/wordlists/dirb/common.txt
+```
 
-Se trovi moduli di **upload**, verifica:
+#### Ffuf
+```bash
+ffuf -u http://<target>/FUZZ -w <wordlist>
+```
 
-- Se è possibile caricare `.php`, `.jsp`, `.asp`, `.exe`.
-- Se il file è accessibile pubblicamente dopo l’upload.
-- Se vengono validati nome, estensione, MIME type.
+---
 
-Upload vulnerabili consentono **Remote Code Execution (RCE)** o reverse shell.
+## Enumerazione di CMS e Pannelli Noti
 
-## Tecniche manuali
+Identificato un CMS, si possono usare tool specifici:
+
+- `wpscan --url <URL>` → WordPress
+- `droopescan scan drupal -u <URL>` → Drupal
+- `joomscan` → Joomla
+
+Path noti da controllare:
+- `/admin`, `/login`, `/wp-login.php`, `/phpmyadmin`
+
+---
+
+## Pagine Protette e Login Brute Force
+
+Con Metasploit:
+```bash
+use auxiliary/scanner/http/http_login
+set AUTH_URI /pagina_riservata
+unset USERPASS_FILE
+```
+> `unset USERPASS_FILE` è consigliato se si desidera specificare separatamente file di username e password, oppure testare singole credenziali.
+
+Se il server è Apache:
+```bash
+use auxiliary/scanner/http/apache_userdir_enum
+```
+> Serve a identificare utenti validi. L’output può essere salvato in un file e usato nel modulo `http_login` per ottimizzare il brute force.
+
+---
+
+## Webshell e Upload di File
+
+Se è presente una funzione di upload:
+- Verifica se è possibile caricare file `.php`, `.jsp`, `.asp`, `.exe`.
+- Verifica se i file caricati sono accessibili pubblicamente.
+- Controlla la validazione su estensione, MIME e contenuto.
+
+---
+
+## Tecniche Manuali
 
 ### View Source
 
-Cerca:
+Analizza il codice HTML:
+- Commenti nascosti (`<!-- -->`)
+- Path o endpoint JS (`fetch("/admin/api")`)
+- Form nascosti o parametri (`action="/hidden"`)
 
-- Commenti HTML (`<!-- -->`)
-- JS con URL o API (`fetch("/admin/api")`)
-- Path nascosti (`action="/hidden"`)
-- Chiavi, token o credenziali hardcoded
+### DevTools
 
-### Ispezione con DevTools
+Analizza:
+- Header HTTP
+- Cookie (`HttpOnly`, `Secure`, `SameSite`)
+- Richieste AJAX
 
-Verifica richieste AJAX, parametri, header particolari, cookie non sicuri (`HttpOnly`, `Secure`, `SameSite`).
+---
 
 ## Nikto
 
-Scanner semplice ma utile:
+Scanner automatico per vulnerabilità:
+```bash
+nikto -h <URL>
+```
+Cerca file deprecati, directory comuni, problemi noti.
 
-- `nikto -h <URL>`
+---
 
-Cerca:
+## Nmap NSE Script
 
-- File pericolosi
-- Directory comuni
-- Configurazioni deprecate
-- Problemi SSL
+```bash
+nmap --script http-title <IP>         # titolo della pagina
+nmap --script http-enum <IP>          # directory comuni
+nmap --script http-methods <IP>       # metodi HTTP supportati
+nmap --script http-headers <IP>       # header HTTP
+```
 
-## Nmap e HTTP NSE
+---
 
-- `nmap --script http-title <IP>` → titolo della pagina
-- `nmap --script http-enum <IP>` → directory comuni
-- `nmap --script http-methods <IP>` → metodi HTTP permessi
-- `nmap --script http-headers <IP>` → header server
+## Considerazioni Finali
 
-## Considerazioni finali
-
-L’enumerazione HTTP può rivelare enormi quantità di informazioni. Anche un semplice commento HTML può contenere:
+L’enumerazione HTTP può rivelare informazioni cruciali, tra cui:
 
 - Path a script interni
-- Nomi utente o email
 - API non documentate
+- Credenziali nei commenti
+- File `.bak`, `.old`, `.zip` scaricabili
 
-Verifica sempre:
-
-- Se le directory scoperte sono accessibili.
-- Se i moduli di login possono essere brute-forzati.
-- Se i file `.bak`, `.old`, `.zip` possono essere scaricati e contengono codice sorgente.
-
-Le applicazioni web sono uno degli entry point più sfruttati nei penetration test reali. Lavorare bene su questa fase aumenta le probabilità di accesso remoto o escalazione.
+Le applicazioni web sono uno dei vettori più comuni per l’accesso iniziale in un attacco. Una buona fase di enumerazione può portare all’escalation dei privilegi o all’accesso completo.
