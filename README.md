@@ -34,7 +34,8 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──Exploiting
 │  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
 │  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
-│  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 ShellShock</a>
+│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 Apache ShellShock</a>
+│  └──<a href="">Rejetto 2.3 Vulnerable HTTPFileServer</a>
 └──Post Exploitation
 
  <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP                              (161-162)</a>
