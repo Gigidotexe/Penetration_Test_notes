@@ -18,19 +18,26 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20Framework.md">Metasploit Framework</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Msfvenom.md">Msfvenom</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP                               (21)</a>
+ 
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Exploiting.md">Exploiting</a> 
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Post%20Exploitation.md">Post Exploitation</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH                               (22)</a>
+
+ <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH (22)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Exploiting.md">Exploiting</a> 
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Post%20Exploitation.md">Post Exploitation</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration                  (80)</a>
-├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
-├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
-└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 ShellShock</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP                              (161-162)</a>
+
+ <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md">HTTP (80)</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
+├──<a href="">Exploiting</a>
+│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
+│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
+│  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 ShellShock</a>
+└──<a href="">Post Exploitation</a>
+
+ <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP                              (161-162)</a>
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
