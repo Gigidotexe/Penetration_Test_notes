@@ -1,3 +1,4 @@
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/README.md"> Home </a>
 # Passive Information Gathering
 
 La raccolta di informazioni passiva rappresenta una delle prime fasi di un penetration test, ed è fondamentale per acquisire dati utili senza interagire direttamente con il target. Questo approccio è invisibile dal punto di vista dell’infrastruttura bersaglio, perché non genera traffico diretto verso il sistema analizzato. Lo scopo è raccogliere quante più informazioni possibile sfruttando esclusivamente fonti OSINT (Open Source Intelligence), come motori di ricerca, dati DNS pubblici, archivi storici del web e strumenti automatici.
