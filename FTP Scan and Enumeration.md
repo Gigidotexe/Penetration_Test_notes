@@ -1,6 +1,5 @@
-## Identificazione del servizio
-
-Il primo passo in fase di enumerazione consiste nel verificare se il servizio è attivo e identificarne la versione:
+## Identificazione del Servizio
+Il primo passo é quello di verificare che servizio é in esecuzione sulla macchina target.
 
 ```
 nmap -sV -p21 <IP>
