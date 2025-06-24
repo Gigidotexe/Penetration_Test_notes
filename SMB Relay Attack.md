@@ -1,3 +1,4 @@
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/README.md"> Back </a>
 # SMB Relay Attack – Tecnica, Configurazione e Spiegazioni
 
 L’**SMB Relay Attack** è una tecnica di attacco di tipo man-in-the-middle (MITM) in cui un attaccante intercetta una richiesta SMB legittima e la inoltra verso un altro sistema, impersonando l’utente vittima e ottenendo così accesso non autorizzato a risorse sensibili.
