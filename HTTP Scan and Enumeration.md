@@ -26,6 +26,7 @@ nmap --script http-enum <IP>         # directory comuni
 nmap --script http-methods <IP>      # metodi HTTP disponibili
 nmap --script http-headers <IP>      # header di risposta
 ```
+> Se durante la scansione dei metodi, risulta possibile caricare dei file sul server, possiamo tentare di caricare una webshell durante la fase di Exploiting
 
 ---
 
