@@ -1,34 +1,55 @@
-## Identificazione Iniziale
-
-La prima fase consiste nel visitare manualmente l’host nel browser o tramite `curl`:
+## Identificazione del Servizio
+Il primo passo é quello di verificare che servizio é in esecuzione sulla macchina target usando `nmap`.
 ```bash
-curl -I <target>          # mostra gli header HTTP (inclusi server, cookie, redirect)
-curl -k https://<target>  # ignora errori di certificato SSL
+nmap -sV -p80,443 <IP>
 ```
-
-L’header `Server` può rivelare il software in uso (es. `Apache`, `nginx`, `IIS`) e la versione, utile per correlare CVE. Alcuni server restituiscono anche l’header `X-Powered-By` (es. `PHP/5.6.40`, `ASP.NET`).
-
-Con Metasploit, è possibile utilizzare moduli ausiliari:
-```bash
-use auxiliary/scanner/http/http_version    # identifica la versione del server HTTP
-use auxiliary/scanner/http/http_header     # estrae gli header HTTP
-```
-
-> Estraendo gli header HTTP è possibile rilevare componenti lato server, comportamenti di redirect, tecnologie backend e potenziali vulnerabilità note associate alle versioni individuate.
-
----
-
-## Nmap
-Esistono degli NSE per poter analizzare il sito web target:
+Per poter analizzare piú a fondo il nostro target, usiamo degli script nse
 ```bash
 nmap --script http-title <IP>        # titolo della pagina
 nmap --script http-enum <IP>         # directory comuni
 nmap --script http-methods <IP>      # metodi HTTP disponibili
 nmap --script http-headers <IP>      # header di risposta
 ```
+
+## Verifica dei metodi HTML
+Una fase molto importante é quella di verificare quali metodi http accetta il target
+```bash
+davtest -url http://<IP>/directory     #sonda metodi (PUT, MKCOL, PROPFIND) e verifica upload se non é protetta da password
+curl -X OPTIONS http://<IP>/directory -i
+```
 > Se durante la scansione dei metodi, risulta possibile caricare dei file sul server, possiamo tentare di caricare una webshell durante la fase di Exploiting
+---
+
+## Analisi manuale
+Successivamente possiamo proseguire con l'analizzare manualmente il codice della pagina web
+```bash
+curl -I <target>          # mostra gli header HTTP (inclusi server, cookie, redirect)
+curl -k https://<target>  # ignora errori di certificato SSL
+```
+
+L’header `Server` può rivelare il software in uso (es. `Apache`, `nginx`, `IIS`) e la versione, utile per correlare CVE. Alcuni server restituiscono anche l’header `X-Powered-By` (es. `PHP/5.6.40`, `ASP.NET`).
+Analizzando 
+- Commenti nascosti (`<!-- -->`)
+- Path o endpoint JS (`fetch("/api/hidden")`)
+- Campi nascosti, form sospetti, path non visibili
+
+> Estraendo gli header HTTP è possibile rilevare componenti lato server, comportamenti di redirect, tecnologie backend e potenziali vulnerabilità note associate alle versioni individuate.
 
 ---
+
+## Scansione con Metasploit
+Anche metasploit ha dei moduli ausiliari per poter visualizzare la versione del server e l'header http
+```bash
+use auxiliary/scanner/http/http_version    # identifica la versione del server HTTP
+use auxiliary/scanner/http/http_header     # estrae gli header HTTP
+```
+é consigliato anche verificare se un sistema é vulnerabile ad una vulnerabiltá nota usando vari moduli ausiliari come
+```bash
+auxiliary/scanner/http/webdav_scanner
+exploit/windows/http/badblue_passthru
+
+```
+> se risulta vulnerabile vai alle sezioni apposite nel GitHub
 
 ## Scansione con Nikto
 
@@ -40,24 +61,6 @@ Nikto individua:
 - File deprecati o nascosti
 - Problemi di configurazione
 - Versioni vulnerabili
-
----
-
-## Tecniche Manuali
-
-### View Source
-
-Analizza il codice HTML:
-- Commenti nascosti (`<!-- -->`)
-- Path o endpoint JS (`fetch("/api/hidden")`)
-- Campi nascosti, form sospetti, path non visibili
-
-### DevTools
-
-Analizza:
-- Header HTTP
-- Cookie: `Secure`, `HttpOnly`, `SameSite`
-- Parametri GET/POST nelle chiamate AJAX
 
 ---
 
