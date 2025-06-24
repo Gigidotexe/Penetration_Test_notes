@@ -42,6 +42,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
+ 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA                         (445-139)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20San%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Exploiting.md"> Exploiting </a>
@@ -52,14 +53,17 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
+ 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL                   (3306)</a> 
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
+ 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20(25-465-587).md">SMTP Enumeration                  (25-465-587)</a> 
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
+ 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20(5985-5986).md">WinRM                             (5985-5986)</a>
 ├──Scansione ed enumerazione
 ├──Exploiting 
