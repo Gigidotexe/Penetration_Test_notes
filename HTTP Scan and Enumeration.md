@@ -36,6 +36,10 @@ Analizzando
 
 > Estraendo gli header HTTP è possibile rilevare componenti lato server, comportamenti di redirect, tecnologie backend e potenziali vulnerabilità note associate alle versioni individuate.
 
+> Se troviamo file .cgi usiamo l'nse <br>
+> `nmap -sV <IP> --script=http-shellshock --script-args "http-shellshock.uri=/<script.cgi>"` <br>
+> per scoprire se é vulnerabile a ShellShock
+
 ---
 
 ## Scansione con Metasploit
