@@ -1,5 +1,5 @@
 ## Scansione e Identificazione del Servizio
-Il primo passo é quello di verificare che un servizio sia in esecuzione sulla macchina target.
+Il primo passo é quello di verificare che servizio é in esecuzione sulla macchina target.
 ### Nmap
 Per verificare se SSH è attivo e quale versione è in esecuzione:
 ```bash
