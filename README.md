@@ -19,18 +19,39 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20Framework.md">Metasploit Framework</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Msfvenom.md">Msfvenom</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP                               (21)</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Exploiting.md">Exploiting</a> 
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Post%20Exploitation.md">Post Exploitation</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH                               (22)</a>
+├──Scansione ed enumerazione
+├──Exploiting 
+└──Post
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration                  (80)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 ShellShock</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP                              (161-162)</a>
+├──Scansione ed enumerazione
+├──Exploiting 
+└──Post
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA                         (445-139)</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Relay%20Attack.md">SMB Relay</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP                               (3389)</a> 
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL Enumeration                   (3306)</a> 
+├──Scansione ed enumerazione
+├──Exploiting 
+└──Post
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL                   (3306)</a> 
+├──Scansione ed enumerazione
+├──Exploiting 
+└──Post
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20(25-465-587).md">SMTP Enumeration                  (25-465-587)</a> 
+├──Scansione ed enumerazione
+├──Exploiting 
+└──Post
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20(5985-5986).md">WinRM                             (5985-5986)</a>
+├──Scansione ed enumerazione
+├──Exploiting 
+└──Post
 </pre>
 
 ## 🧬 Privilege Escalation
