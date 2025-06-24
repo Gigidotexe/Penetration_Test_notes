@@ -32,6 +32,7 @@ Analizzando
 - Commenti nascosti (`<!-- -->`)
 - Path o endpoint JS (`fetch("/api/hidden")`)
 - Campi nascosti, form sospetti, path non visibili
+- File .cgi
 
 > Estraendo gli header HTTP è possibile rilevare componenti lato server, comportamenti di redirect, tecnologie backend e potenziali vulnerabilità note associate alle versioni individuate.
 
