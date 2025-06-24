@@ -61,12 +61,30 @@ nmap -p 21 --script=ftp-anon <IP>
 
 ---
 
+## Tentare l'accesso in altri modi
+In alcuni casi è possibile accedere direttamente via browser:
+
+```
+ftp://<IP>
+```
+
+Oppure usare strumenti alternativi:
+
+```
+wget ftp://<IP>
+curl ftp://<IP>
+lftp <IP>
+```
+
+---
+
 ## Enumerazione FTP con Metasploit
 
 Su Metasploit esiste un modulo specifico per effettuare **enumerazione del servizio FTP**, che consente di estrarre il banner e raccogliere informazioni utili:
 
 ```
 use auxiliary/scanner/ftp/ftp_version
+use auxiliary/scanner/ftp/anonymous    #Verifica l'accesso anonimo
 ```
 
 ---
