@@ -47,7 +47,7 @@ use auxiliary/scanner/http/http_header     # estrae gli header HTTP
 ```bash
 auxiliary/scanner/http/webdav_scanner
 exploit/windows/http/badblue_passthru
-
+auxiliary/scanner/http/apache_mod_cgi_bash_env  #ShellShock
 ```
 > se risulta vulnerabile vai alle sezioni apposite nel GitHub
 
