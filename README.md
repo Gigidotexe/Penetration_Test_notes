@@ -23,9 +23,9 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Exploiting.md">Exploiting</a> 
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Post%20Exploitation.md">Post Exploitation</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH                               (22)</a>
-├──Scansione ed enumerazione
-├──Exploiting 
-└──Post
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Exploiting.md">Exploiting</a> 
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Post%20Exploitation.md">Post Exploitation</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Enumeration.md">HTTP Enumeration                  (80)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">CVE-2002-1103 BadBlue Exploiting</a>
