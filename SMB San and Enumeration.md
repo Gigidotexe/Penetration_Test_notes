@@ -37,3 +37,21 @@ smbclient -L //<target>/ -N
 ```
 
 ---
+
+## Altri modi
+esistono altri metodi per tentare di enumerare senza credenziali, ma solo se il server é configurato in modo da permettere gli accessi anonimi
+```bash
+enum4linux -a <IP>
+crackmapexec smb <target> --shares   # elenca condivisioni
+crackmapexec smb <target> --users    # enumera utenti
+```
+### smbclient
+Client per connettersi e interagire con le share:
+```bash
+smbclient -L //<target>/ -N # condivisioni anonime
+smbclient -L <IP> -U <username> # share disponibili per utente
+smbclient //<target>/<share> -U <username> # accesso alla share
+```
+Comandi interni:
+- `?`, `ls`, `get <file>`, `put <file>`, `cd`, `mkdir`, `rmdir`
+> File come `*.tar.gz` possono essere estratti con `tar xzf file.tar.gz`
