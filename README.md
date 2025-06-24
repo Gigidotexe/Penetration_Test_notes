@@ -43,7 +43,11 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──Exploiting 
 └──Post
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA                         (445-139)</a>
-└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Relay%20Attack.md">SMB Relay</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20San%20and%20Enumeration.md">Scansione ed enumerazione</a>
+├──Exploiting
+│  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Relay%20Attack.md">SMB Relay</a>
+└──Post Exploitation
+ 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP                               (3389)</a> 
 ├──Scansione ed enumerazione
 ├──Exploiting 
