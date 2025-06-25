@@ -28,6 +28,14 @@ set RHOSTS <IP>
 set RPORT <PORT>
 run
 ```
+### rdp-sec-check
+é script di enumerazione RDP incluso nel progetto Impacket, progettato per verificare il livello di sicurezza configurato su un servizio RDP esposto <br>
+In pratica, non tenta un accesso come fanno altri tool, ma analizza quali meccanismi di autenticazione e protezione sono abilitati sul server RDP remoto.
+é scaricabile da <a href="https://github.com/fortra/impacket">GitHub</a>
+```bash
+cd impacket/exaples
+python rdp-sec-check <IP>
+```
 
 ---
 
