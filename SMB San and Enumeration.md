@@ -18,7 +18,7 @@ nmap -p445 --script=smb-security-mode <IP>      # modalità di sicurezza attiva 
 ### Metasploit
 ```bash
 use auxiliary/scanner/smb/smb_version         # verifica versione SMB
-use auxiliary/scanner/smb/smb_enum_users      # enumerazione utenti
+use auxiliary/scanner/smb/smb_enumusers      # enumerazione utenti
 use auxiliary/scanner/smb/smb_enumshares      # enumerazione condivisioni
 use auxiliary/scanner/smb/smb_ms17_010        # verifica vulnerabilità EternalBlue
 ```
