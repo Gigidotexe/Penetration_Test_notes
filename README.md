@@ -106,6 +106,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ## 🧰 Post-Exploitation
 <pre>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
+dir C:\Windows\System32\*.txt /s /b
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Alternate Data Stream</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">Windows Password Hashes</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows Configuration Files</a>
