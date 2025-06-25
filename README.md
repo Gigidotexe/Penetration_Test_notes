@@ -43,6 +43,8 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA (445-139)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20San%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Exploiting.md">Exploiting</a>
+│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20EternalBlue.md">MS17-010 EternalBlue</a>
+│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20AutoBlue.md">MS17-010 AutoBlue</a>
 │  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Relay%20Attack.md">SMB Relay</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Post%20Exploitation.md">Post Exploitation</a>
  
