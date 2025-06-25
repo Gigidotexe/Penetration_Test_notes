@@ -1,7 +1,7 @@
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/README.md"> Back </a>
 # AutoBlue-MS17-010
 
-**AutoBlue-MS17-010** è uno script Python che automatizza lo sfruttamento della vulnerabilità EternalBlue. <br>
+**AutoBlue-MS17-010** è uno script Python, disponibile su <a href="https://github.com/3ndG4me/AutoBlue-MS17-010/tree/master">GutHub</a> che automatizza lo sfruttamento della vulnerabilità EternalBlue. <br>
 È particolarmente utile in contesti dove non si usa Metasploit o si preferisce una procedura manuale e più trasparente.
 
 ```bash
