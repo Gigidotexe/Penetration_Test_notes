@@ -1,7 +1,15 @@
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/README.md"> Back </a>
 # Exploit EternalBlue (MS17-010)
 
-**EternalBlue** è una vulnerabilità critica identificata come **MS17-010** che colpisce il protocollo **SMBv1** su sistemi Windows non aggiornati (XP, 2003, 7). <br>
+**EternalBlue** è una vulnerabilità critica identificata come **MS17-010** che colpisce il protocollo **SMBv1** su sistemi Windows non aggiornati come:
+- Windows Vista
+- Windows 7
+- Windows Server 2008
+- Windows 8.1
+- Windows Server2012
+- Windows 10
+- Windows Server 2016
+
 Questa vulnerabilità consente l'esecuzione di codice da remoto (**RCE**) senza autenticazione, sfruttando un bug nei pacchetti SMB. <br>
 È diventata celebre in quanto utilizzata dal worm **WannaCry**. <br>
 EternalBlue è sfruttabile solo se il servizio SMBv1 è attivo e non patchato.
