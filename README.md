@@ -90,7 +90,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe</a>  
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
-   └──<parla di getsystem di meterpeter
+   └──parla di getsystem di meterpeter
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PowerUp.md">PowerUp</a>
 </pre>
