@@ -38,10 +38,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 │  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Rejetto%20Vulnerable%20HTTPFileServer.md">Rejetto 2.3 Vulnerable HTTPFileServer</a>
 └──Post Exploitation
 
- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP                              (161-162)</a>
-├──Scansione ed enumerazione
-├──Exploiting 
-└──Post
+ <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP (161-162)</a>
  
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA (445-139)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20San%20and%20Enumeration.md">Scansione ed enumerazione</a>
