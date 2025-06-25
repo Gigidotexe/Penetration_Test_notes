@@ -55,9 +55,9 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP                               (3389)</a> 
-├──Scansione ed enumerazione
-├──Exploiting 
-└──Post
+├──<a href=https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20Scan%20and%20Enumeration.md"">Scansione ed enumerazione</a>
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20Exploiting.md">Exploiting</a>
+   └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/cve_2019_0708%20BlueKeep.md">cve_2019_0708 BlueKeep</a>
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL                   (3306)</a> 
