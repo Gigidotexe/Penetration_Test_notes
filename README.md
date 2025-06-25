@@ -18,18 +18,22 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20Framework.md">Metasploit Framework</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Msfvenom.md">Msfvenom</a>
- 
+</pre>
+<pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Exploiting.md">Exploiting</a> 
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20Post%20Exploitation.md">Post Exploitation</a>
-
- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH (22)</a>
+</pre>
+<pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20(22).md">SSH (22)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Exploiting.md">Exploiting</a> 
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SSH%20Post%20Exploitation.md">Post Exploitation</a>
-
- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md">HTTP (80)</a>
+</pre>
+<pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md">HTTP (80)</a> 
+[![Port 80](https://img.shields.io/badge/Port-80-green)](https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md)
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──Exploiting
 │  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
@@ -37,9 +41,11 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 │  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 Apache ShellShock</a>
 │  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Rejetto%20Vulnerable%20HTTPFileServer.md">Rejetto 2.3 Vulnerable HTTPFileServer</a>
 └──Post Exploitation
-
- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP (161-162)</a>
- 
+</pre>
+<pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP (161-162)</a>
+</pre>
+<pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB,%20SAMBA%20(445-139).md">SMB/SAMBA (445-139)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20San%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Exploiting.md">Exploiting</a>
@@ -47,22 +53,26 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 │  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MS17-010%20AutoBlue.md">MS17-010 AutoBlue</a>
 │  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Relay%20Attack.md">SMB Relay</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Post%20Exploitation.md">Post Exploitation</a>
- 
+</pre>
+<pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/RDP%20(3389).md">RDP                               (3389)</a> 
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
- 
+</pre>
+<pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL                   (3306)</a> 
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
- 
+</pre>
+<pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMTP%20(25-465-587).md">SMTP Enumeration                  (25-465-587)</a> 
 ├──Scansione ed enumerazione
 ├──Exploiting 
 └──Post
- 
+</pre>
+<pre>  
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20(5985-5986).md">WinRM                             (5985-5986)</a>
 ├──Scansione ed enumerazione
 ├──Exploiting 
