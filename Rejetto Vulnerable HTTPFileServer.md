@@ -1,3 +1,4 @@
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/README.md"> Back </a>
 # Exploiting a Vulnerable HTTP File Server (HFS)
 
 Un **HTTP File Server (HFS)** è un tipo di server web progettato appositamente per la **condivisione di file** con utenti remoti. A differenza dei server web tradizionali, il cui scopo principale è **ospitare siti web** o **fornire documenti statici e dinamici** (come HTML, CSS, immagini o script), un HFS è ottimizzato per permettere **il download diretto di file** e l'accesso a directory da parte di utenti collegati alla rete.
