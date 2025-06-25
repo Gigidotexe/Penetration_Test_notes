@@ -71,11 +71,11 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──Exploiting 
 └──Post
 </pre>
-<pre>  
+<pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20(5985-5986).md">WinRM                             (5985-5986)</a>
-├──Scansione ed enumerazione
-├──Exploiting 
-└──Post
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20Exploiting.md">Exploiting</a>
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20Post%20Exploitation.md">Post</a>
 </pre>
 
 ## 🧬 Privilege Escalation
