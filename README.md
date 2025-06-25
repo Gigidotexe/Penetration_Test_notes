@@ -33,7 +33,6 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md">HTTP (80)</a> 
-[![Port 80](https://img.shields.io/badge/Port-80-green)](https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md)
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
 ├──Exploiting
 │  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Windows WebDAV</a> 
