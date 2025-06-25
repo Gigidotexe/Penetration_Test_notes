@@ -1,3 +1,4 @@
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/README.md"> Back </a>
 # Exploit EternalBlue (MS17-010)
 
 **EternalBlue** è una vulnerabilità critica identificata come **MS17-010** che colpisce il protocollo **SMBv1** su sistemi Windows non aggiornati (XP, 2003, 7). <br>
