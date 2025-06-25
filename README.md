@@ -63,7 +63,8 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SQL%20(3306).md">SQL                   (3306)</a> 
 ├──Scansione ed enumerazione
-├──Exploiting 
+├──Exploiting
+│  └──exploit/windows/mssql/mssql_clr_payload
 └──Post
 </pre>
 <pre>
