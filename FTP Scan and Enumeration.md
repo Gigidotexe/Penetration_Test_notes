@@ -10,6 +10,11 @@ nmap -sV -p21 <IP>
 - `-p 21` isola la scansione alla porta FTP
 > se la versione é `vsftpd 2.3.4` il servizio é vulnerabile a Command Execution
 
+NSE utili:
+```bash
+--script=vuln <IP>
+```
+
 Per il banner grabbing manuale:
 
 ```
