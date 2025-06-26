@@ -60,21 +60,11 @@ sudo systemctl status postgresql
 
 Il database facilita anche l’importazione dei dati provenienti da altri strumenti di terze parti come **Nmap** o **Nessus**.
 
-Per inizializzarlo:
 ```bash
-sudo msfdb init
-```
-In caso di problemi:
-```bash
-sudo msfdb reinit
-```
-Per verificarne lo stato:
-```bash
-sudo msfdb status
-```
-Oppure direttamente dalla MSFconsole:
-```bash
-db_status
+sudo msfdb init       # per inizializzarlo
+sudo msfdb reinit     # in caso di problemi
+sudo msfdb status     # per verificarne lo stato
+db_status             # per verificarne lo stato dentro msfconsole
 ```
 > puoi usare anche `service postgresql start` per avviarlo.
 ---
