@@ -76,7 +76,7 @@ Oppure direttamente dalla MSFconsole:
 ```bash
 db_status
 ```
-
+> puoi usare anche `service postgresql start` per avviarlo.
 ---
 
 ## Gestione dei Workspace
