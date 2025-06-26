@@ -57,7 +57,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MSSQL%20(1433-1434).md">MSSQL (1433-1434)</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MSSQL%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
-├──<a href="">Exploiting</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/MSSQL%20Exploiting.md">Exploiting</a>
 └──<a href="">Post Exploitation</a>
 </pre>
 <pre>
