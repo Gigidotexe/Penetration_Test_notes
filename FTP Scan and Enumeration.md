@@ -8,7 +8,7 @@ nmap -sV -p21 <IP>
 
 - `-sV` consente il banner grabbing per determinare la versione del servizio  
 - `-p 21` isola la scansione alla porta FTP
-> se la versione é `2.3.4` il servizio é vulnerabile a Command Execution
+> se la versione é `vsftpd 2.3.4` il servizio é vulnerabile a Command Execution
 
 Per il banner grabbing manuale:
 
