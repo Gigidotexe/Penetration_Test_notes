@@ -55,7 +55,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SMB%20Post%20Exploitation.md">Post Exploitation</a>
 </pre>
 <pre>
-<a href="">RSYNC</a>
+<a href="">RSYNC (873)</a>
 ├──<a href="">Scansione ed enumerazione</a>
 ├──<a href="">Exploiting</a>
 └──<a href="">Post Exploitatiom</a>
