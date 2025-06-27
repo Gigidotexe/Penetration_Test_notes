@@ -124,7 +124,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 </pre>
 ### Windows
 <pre>
-
+<a href="">Metasploit Post Modules</a>
 </pre>
 <pre>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
