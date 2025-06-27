@@ -117,6 +117,14 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 
 ## 🧰 Post-Exploitation
+### Linux
+<pre>
+
+</pre>
+### Windows
+<pre>
+
+</pre>
 <pre>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
 dir C:\Windows\System32\*.txt /s /b
