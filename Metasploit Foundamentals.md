@@ -95,3 +95,13 @@ db_nmap -sV -Pn 192.168.1.0/24
 ```
 
 ---
+
+### Comando `connect`
+
+Il comando `connect` in Metasploit è simile a `telnet` o `nc`. Serve per connettersi manualmente a una porta di un host remoto e verificare se è aperta o interagire direttamente con il servizio:
+```bash
+connect <IP> <porta>
+```
+È utile ad esempio per testare banner o protocolli senza dover usare un modulo automatizzato.
+
+---
