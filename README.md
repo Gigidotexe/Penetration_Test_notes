@@ -17,7 +17,12 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ## 🧾 Enumeration and Exploitation
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20Framework.md">Metasploit Framework</a>
-└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Msfvenom.md">Msfvenom</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20Foundamentals.md">Foundamentals</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20Automazione.md">Automazione</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/tree/main">AutoPWN</a>
+├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Msfvenom.md">Msfvenom</a>
+│  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Msfvenom%20Econding%20Payload.md">Encoding dei payload</a>
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Meterpeter.md">Meterpeter</a>
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
