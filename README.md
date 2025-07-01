@@ -122,24 +122,20 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 </pre>
 ### Linux
 <pre>
-
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 </pre>
 ### Windows
 <pre>
-<a href="">Persistenza su Windows</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistance%20on%20windows.md">Persistenza su Windows</a>
 Privilege Escalation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe Bypass</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
 
-</pre>
-<pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">HASH in Windows</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Scripts dentro File legittimi</a>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
 dir C:\Windows\System32\*.txt /s /b
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Scripts dentro File legittimi</a> 
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">HASH in Windows</a> 
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows</a>
-
-
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 </pre>
+
 ---
