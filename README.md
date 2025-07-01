@@ -115,17 +115,21 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 
 ## 🧰 Post-Exploitation
+<pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dummping with Mimikatz and Kiwi</a>
+</pre>
 ### Linux
 <pre>
 
 </pre>
 ### Windows
 <pre>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
+
 Privilege Escalation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe Bypass</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dummping with Mimikatz and Kiwi</a>
+
 </pre>
 <pre>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
