@@ -9,6 +9,7 @@ set PASSWORD <pasword>                 # impostiamo una password per l'account c
 set USERNAME <username>                # impostiamo uno username per l'account che il modulo creerà
 run
 ```
+> la password creata deve avere un carattere speciale e un numero
 
 possiamo anche cambiare le credenziali di un utente se RDP é già abilitato. <br>
 ```bash
