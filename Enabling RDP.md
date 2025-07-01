@@ -3,7 +3,7 @@
 RDP (Remote Desktop Protocol) é disabilitato di default nei sistemi windows. <br>
 Esiste un modulo Meteasploit per poterlo abilitare ma dobbiamo avere prima una sessione meterpreter con dei privilegi elevati. <Br>
 ```bash
-use post/windows/menage/enable_rdp
+use post/windows/manage/enable_rdp
 set SESSION 1
 set PASSWORD <pasword>                 # impostiamo una password per l'account che il modulo creerà
 set USERNAME <username>                # impostiamo uno username per l'account che il modulo creerà
