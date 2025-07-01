@@ -118,6 +118,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dummping with Mimikatz and Kiwi</a>
+   <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PassTheHashAttack.md">Pass The Hash Attack with PSExec</a>
 </pre>
 ### Linux
 <pre>
@@ -138,7 +139,7 @@ dir C:\Windows\System32\*.txt /s /b
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">HASH in Windows</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Passwords In Windows</a>
 
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PassTheHashAttack.md">Pass The Hash Attack</a>
+
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 </pre>
 ---
