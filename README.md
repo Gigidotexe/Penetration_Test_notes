@@ -101,10 +101,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 </pre>
 ### Windows
 <pre>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a> 
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe</a>  
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
-   └──parla di getsystem di meterpeter
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a>  
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PowerUp.md">PowerUp</a>
 </pre>
@@ -125,6 +122,9 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ### Windows
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
+Privilege Escalation
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe Bypass</a> 
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
 </pre>
 <pre>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
