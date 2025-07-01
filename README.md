@@ -126,12 +126,15 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 </pre>
 ### Windows
 <pre>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistance%20on%20windows.md">Persistenza su Windows</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Enabling%20RDP.md">Enabling RDP</a>
-   
 Privilege Escalation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe Bypass</a> 
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
+
+Post Exploitation
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistance%20on%20windows.md">Persistenza su Windows</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Enabling%20RDP.md">Enabling RDP</a>
+<a href="">Windows Keylogging</a>
+
 
 
 
