@@ -134,7 +134,7 @@ Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistence%20on%20windows.md">Persistenza su Windows</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Enabling%20RDP.md">Enabling RDP</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Keylogging.md">Windows Keylogging</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/tree/main">Pulire i Log di Windows</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Clearing%20Log%20Windows.md">Pulire i Log di Windows</a>
 
 
 
