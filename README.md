@@ -119,8 +119,8 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dummping with Mimikatz and Kiwi</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PassTheHashAttack.md">Pass The Hash Attack with PSExec</a>
-<a haref="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Pivoting.md">Pivoting</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Pivoting.md">Pass The Hash Attack with PSExec</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Pivoting.md">Pivoting</a>
+</a>
 </pre>
 ### Linux
 <pre>
