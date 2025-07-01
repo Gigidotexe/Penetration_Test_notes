@@ -24,4 +24,4 @@ y
 ```
 Questo metodono non é consigliato se non si volessero destare sospetti dato che se un utente dovesse vedere che la sua password non gli fará piú ottenere l'accesso al servizio RDP, potrebbe sospettare di essere stato soggetto ad un attacco, meglio se creiamo un altro account con permessi elevati e effettuiamo l'accesso da quello.
 
---
+---
