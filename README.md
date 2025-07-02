@@ -94,18 +94,6 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/WinRM%20Post%20Exploitation.md">Post</a>
 </pre>
 
-## 🧬 Privilege Escalation
-### Introduction
-<pre>
- <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a>
-</pre>
-### Windows
-<pre>
-  
-
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PowerUp.md">PowerUp</a>
-</pre>
-
 ### Linux
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Kernel%20Exploits%20(CVE-2016-5195%20Dirty%20COW).md">Linux Kernel Exploit</a>
@@ -116,6 +104,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 ## 🧰 Post-Exploitation
 <pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dummping with Mimikatz and Kiwi</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PassTheHashAttack.md">Pass The Hash Attack with PSExec</a>
@@ -134,6 +123,7 @@ Privilege Escalation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PowerUp.md">PowerUp</a>
 
 Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistence%20on%20windows.md">Persistenza su Windows</a>
