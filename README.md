@@ -114,6 +114,7 @@ Privilege Escalation
 Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Metasploit%20hashdump%20module.md">Metasploit hashdump module</a>
+<a href="">Persistenza in linux</a>
 </pre>
 ### Windows
 <pre>
