@@ -5,6 +5,7 @@ Un **rootkit** è un tipo di malware progettato per ottenere e mantenere accesso
 Il suo scopo principale è permettere a un attaccante di controllare un computer compromesso senza essere scoperto, spesso alterando file di sistema, processi e log per rimanere invisibile.
 
 Potremmo trovarci in una macchina con `chkrootkit` installato e magari esegue delle scansioni periodiche per potersi difendere da questo tipo di malware. <br>
+possiamo usare il commando `ps aux` per vedere che programmi eseguono i processi e se qualcosa ci ricorda chkrootkit, possiamo copiare il path del codice eseguito e visualizzarlo con `cat` <br>
 Se identifichiamo la sua presenza mentre ci troviamo con una shell aperta in una macchina, teniamo a mente il path dell'applicazione e possiamo verificare la sua versione usando il comando 
 ```bash
 chkrootkit -V
