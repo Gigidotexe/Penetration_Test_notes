@@ -122,6 +122,7 @@ Privilege Escalation
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PowerUp.md">PowerUp</a>
+<a href="">Metasploit hashdump module</a>
 
 Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistence%20on%20windows.md">Persistenza su Windows</a>
