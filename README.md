@@ -110,6 +110,7 @@ Privilege Escalation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CronJobs%20Missconfigurations.md">CronJobs Missconfigurations</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SUID%20Permissions%20Missconfigurations.md">SUID Permission Missconfigurations</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/chkrootkit.md">chkrootkit</a>
+<a href="">Metasploit hashdump module</a>
 
 Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
@@ -122,7 +123,6 @@ Privilege Escalation
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/PowerUp.md">PowerUp</a>
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/tree/main">Metasploit hashdump module</a>
 
 Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Persistence%20on%20windows.md">Persistenza su Windows</a>
