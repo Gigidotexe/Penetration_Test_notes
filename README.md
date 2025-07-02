@@ -139,13 +139,10 @@ Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Keylogging.md">Windows Keylogging</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Clearing%20Event%20Log%20Windows.md">Pulire i Log di Windows</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Credenziali in Unattend.xml Windows</a>
-
-
-
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">HASH in Windows</a>
 
 
    
-<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">HASH in Windows</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Scripts dentro File legittimi</a>
 <!-- parla di autoroute -s <network/subnet>, auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
 dir C:\Windows\System32\*.txt /s /b
