@@ -142,7 +142,6 @@ Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Password%20Hashes.md">HASH in Windows</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Alternate%20Data%20Stream.md">Offuscamento di payload in file legittimi</a>
 <!-- parla di auxiliary/server/socks_proxy e netstat -antp. l'ho torvato nella sessione di smb -->
-dir C:\Windows\System32\*.txt /s /b
 </pre>
 
 ---
