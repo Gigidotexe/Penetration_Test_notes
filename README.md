@@ -109,6 +109,7 @@ Privilege Escalation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Kernel%20Exploits%20(CVE-2016-5195%20Dirty%20COW).md">Linux Kernel Exploit</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CronJobs%20Missconfigurations.md">CronJobs Missconfigurations</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SUID%20Permissions%20Missconfigurations.md">SUID Permission Missconfigurations</a>
+<a href="">chkrootkit</a>
 
 Post Exploitation
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
