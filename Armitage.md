@@ -23,3 +23,16 @@ Per poter aggiungere un host da scansionare clicchiamo `hosts` e `add hosts` nel
 Successivmaente possiamo effettuare una scansione delle porte cliccando col tasto destro del mouse sull'icona del host e poi su `scan` per poi, appena la scansione sará terminata, possiamo cliccare di nuovo col tasto destro sull'icona e poi `services` per visualizzare i servizi in esecuzione sulla macchina target. 
 
 Per effettuare una scansione con nmap possiamo cliccare su `hosts` nel menu in alto e poi `nmap scan` e selezionare la scansione che vogliamo effetutare sul target. 
+
+---
+
+Dopo aver effettuato una scansione, possiamo cercare un exploit nel menù di sinistra e se l'exploit dovesse avere successo, l'icona dell host cambiará diventando rossa, questo significa che quella macchina 
+é stata exploitata. <br>
+Possiamo successivamente aprire uan console `meterpeter` cliccando col tasto destro sull'icona della macchina e poi `meterpeter`. <br>
+possiamo poi affettuare molte operazioni di post exploitation come il dumping degli hash, cliccando sull'icona del target exploitato poi `meterpeter`, `access`, `dump hashes` e `lsass method`. <br>
+Possiamo poi visualizzare il loot cliccando nel menù in alto `view` e poi `loot`. <br>
+
+Possiamo poi visualiizzare le informazioni del target come directory, processi, i log della tastiera o fare uno screenshot tramite la finestra `explore` nel menú di `meterpeter`. <br>
+
+É molto importante la parte del pivoting che é possibile impostare cliccando col tasto destro sul target, poi `meterpreter`, `pivoting` e poi `setup`. <br>
+
