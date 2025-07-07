@@ -59,3 +59,17 @@ su `<filtro2>`:
 | freebsd_x86-64| magazine | sco        |              |
 
 su `<filtro3>` puoi mettere qualiasi protocollo. 
+
+---
+
+## Fixing Exploits
+Dopoa ver copiato un exploit con `searchsploit -m <exploitID>` andiamo a visionare il codice dell'exploit con un editor di testo:
+```bash
+nano <exploitID>
+#oppure
+vim <exploitID>
+```
+generalmente, ogni exploit ha una sua descrizione scritta con commenti dentro al codice in modo da spiegare il suo funzionamento. <br>
+capita spesso anche che degli exploit abbiano delle variabili preimpostate o da impostare in base al nostro target, quindi é fortemente consigliato visionare il codice ed effettuare le dovute modifiche dopo aver letto con cura la descrizione dell'exploit stesso.
+
+se dovessimo aver bisogno di netcat, possiamo trovarlo al path `/usr/share/windows-resources/binaries/nc.exe` preinstallato su kali linux.
