@@ -30,7 +30,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Searchsploit.md">Searchsploit</a>   
 </pre>
 <pre>
-<a href="">NetCat</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Netcat.md">NetCat</a>
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
