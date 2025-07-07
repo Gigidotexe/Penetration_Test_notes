@@ -32,7 +32,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Netcat.md">NetCat</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Netcat%20BindShell.md">BindShell</a>
-└──<a href="">ReverseShell</a>
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Netcat%20ReverseShell.md">ReverseShell</a>
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/FTP%20(21).md">FTP (21)</a>
