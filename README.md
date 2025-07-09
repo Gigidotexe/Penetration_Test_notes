@@ -50,13 +50,14 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md">HTTP (80)</a> 
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP%20Scan%20and%20Enumeration.md">Scansione ed enumerazione</a>
-├──Exploiting
-│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Microsoft IIS (WebDAV)</a> 
-│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">Windows CVE-2002-1103 BadBlue</a>
-│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 Apache ShellShock</a>
-│  ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Rejetto%20Vulnerable%20HTTPFileServer.md">Rejetto 2.3 Vulnerable HTTPFileServer</a>
-│  └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Apache%20Tomcat%20Exploitation.md">Apache Tomcat</a>
-└──Post Exploitation
+└──Exploiting
+   ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/IIS%20WebDAV%20Exploiting.md">Microsoft IIS (WebDAV)</a> 
+   ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2002-1103%20BadBlue%20Exploiting.md">Windows CVE-2002-1103 BadBlue</a>
+   ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/CVE-2014-6271%20ShellShock.md">Linux CVE-2014-6271 Apache ShellShock</a>
+   ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Rejetto%20Vulnerable%20HTTPFileServer.md">Rejetto 2.3 Vulnerable HTTPFileServer</a>
+   ├──<a href="">PHP</a>
+   └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Apache%20Tomcat%20Exploitation.md">Apache Tomcat</a>
+
 </pre>
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/SNMP%20(161-162).md">SNMP (161-162)</a>
