@@ -151,5 +151,5 @@ Post Exploitation
 
 ## BlackBox Tips
 <pre>
-<a href="">Scansione</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/BlackNox%20Scan%20Tips.md">Scansione</a>
 </pre>
