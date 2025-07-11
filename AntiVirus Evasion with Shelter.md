@@ -68,3 +68,25 @@ L
 ```
 avremo cosí il nostro eseguibile modificato e quello che abbiamo dato a shellcode precedentemente verrá messo nelle sua cartella di backup.
 ora dovremo solo avviare un multi handler con il payload impostato e far eseguire l'applicazione .exe modificata sul target. 
+
+---
+
+## Invoke Obfuscation
+é un opersource Powershell v2.0+ tool in grado di offuscare script Powershell in modo che non allarmino l'antivirus. 
+é possibile installarlo al seguente <a href="https://github.com/danielbohannon/Invoke-Obfuscation">link</a>
+
+Questo tool permette di eseguire dei codici powershell su sitemi linux 
+```bash
+sudo apt-get install powershell -y
+pwsh                                       # per avviare powershell su linux
+cd ./Invoke-Obfuscation/                   # per spostarsi nella directory di obfuscation installato da github
+Import-Module ./Invoke-Obfuscation psd1    # per importare il modulo di obfuscation
+Invoke-Obfuscation                         # per avviare il programma
+```
+adesso prendiamo un shelcode preso dalla CheatSheet e lo salviamo in un file chiamato `shell.ps1` per poi iniziare il processo di obfuscation dentro la console poweshell aperta: 
+```bash
+SET SCRIPTPATH /path/file/shell.ps1
+```
+per poi inserire una tecnica di offuscamento tra quelle indicate come ad esempio `AST` per poi scrivere `ALL` oppure se volessimo codificare lo script scriviamo `ENCODING` per poi dire con quale algoritmo vogliamo codificare lo script. <br> 
+verrá poi generato il nuovo codice che possiamo eseguire sulla macchina windows target 
+
