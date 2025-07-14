@@ -130,6 +130,8 @@ Persistence
 
 ### Windows
 <pre>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Local%20enumeration.md">Windows Local Enumeration</a>
+    
 Privilege Escalation
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe Bypass</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
