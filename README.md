@@ -112,6 +112,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ### Linux
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Local%20enumeration.md">Linux Local Enumeration</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Upgradare%20una%20shell%20non%20interattiva.md">Upgrading Non-Interactive Shell</a>
     
 Privilege Escalation
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Post%20Exploitetion%20Modules.md">Linux Post Exploitation Modules</a>
