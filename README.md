@@ -136,6 +136,7 @@ Persistence
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Local%20enumeration.md">Windows Local Enumeration</a>
     
 Privilege Escalation
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Privilege%20Escalation%20Vulnerabilities.md">Windows Privilege Escalation Vulnerabilities</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/UACMe.md">UACMe Bypass</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Access%20Token%20Impersonation.md">Access Token Impersonation</a>
 │   └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Potato%20Attack.md">Potato Attack</a>
