@@ -106,7 +106,6 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ## 🧰 Post-Exploitation
 <pre>
 <a href="Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a>
-<a href="Post%20Exploitation%20Modules.md">Metasploit Post Modules</a>
 <a href="Pivoting.md">Pivoting</a>
 </pre>
 
