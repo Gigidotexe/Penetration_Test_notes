@@ -29,7 +29,6 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──<a href="Armitage.md">Armitage</a>
 ├──<a href="Meterpeter.md">Meterpreter</a>
 └──<a href="Metasploit%20hashdump%20module.md">hashdump module</a>
-<a href="Post%20Exploitation%20Modules.md">Post Exploitation Modules</a>
 </pre>
 
 ---
@@ -131,6 +130,7 @@ Persistence
 
 ### Windows
 <pre>
+<a href="Post%20Exploitation%20Modules.md">Windows Post Exploitation Modules</a>
 <a href="Windows%20Local%20enumeration.md">Windows Local Enumeration</a>
 Privilege Escalation
 ├──<a href="Windows%20Privilege%20Escalation%20Vulnerabilities.md">Windows Privilege Escalation Vulnerabilities</a>
