@@ -141,6 +141,7 @@ Privilege Escalation
 └──<a href="PowerUp.md">PowerUp</a>
 Persistence
 └──<a href="Persistence%20on%20windows.md">Persistence on Windows</a>
+    <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Persistance%20via%20Services.md">Windwos Persistance Via Services</a>
 Abilitare accessi remoti
 └──<a href="Enabling%20RDP.md">Enabling RDP</a>
 Keylogging
