@@ -142,7 +142,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <br>Persistence
 ├──<a href="Persistence%20on%20windows.md">Persistence on Windows</a>
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Persistence%20via%20Services.md">Windwos Persistence Via Services</a>
-└──<a href="">Windows Persistence Via RDP</a>    
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20persistence%20via%20RDP.md">Windows Persistence Via RDP</a>    
 <br>Abilitare accessi remoti
 └──<a href="Enabling%20RDP.md">Enabling RDP</a>
 <br>Keylogging
