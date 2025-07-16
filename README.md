@@ -125,7 +125,8 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──<a href="Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 └──<a href="Metasploit%20hashdump%20module.md">Metasploit hashdump module</a>
 <br>Persistence
-└──<a href="Persistenza%20in%20Linux.md">Persistenza in Linux</a>
+├──<a href="Persistenza%20in%20Linux.md">Persistenza in Linux</a>
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Persistence%20Via%20SSH.md">Linux Persistence Via SSH</a>
 </pre>
 
 ### Windows
