@@ -114,17 +114,17 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="Linux%20Local%20enumeration.md">Linux Local Enumeration</a>
 <a href="Upgradare%20una%20shell%20non%20interattiva.md">Upgrading Non-Interactive Shell</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Privilege%20Escalation%20Week%20Permissions.md">Linux Privilege Escalation using Weak Permissions</a>
-Privilege Escalation
+<br>Privilege Escalation
 ├──<a href="Linux%20Post%20Exploitetion%20Modules.md">Linux Post Exploitation Modules</a>
 ├──<a href="Linux%20Kernel%20Exploits%20(CVE-2016-5195%20Dirty%20COW).md">Linux Kernel Exploits (Dirty COW)</a>
 ├──<a href="CronJobs%20Missconfigurations.md">CronJobs Misconfigurations</a>
 └──<a href="SUID%20Permissions%20Missconfigurations.md">SUID Permissions Misconfigurations</a>
-Rootkit / Check
+<br>Rootkit / Check
 └──<a href="chkrootkit.md">chkrootkit</a>
-Dump Credenziali
+<br>Dump Credenziali
 ├──<a href="Dumping%20Linux%20Password%20Hashes.md">Dumping Linux Password Hashes</a>
 └──<a href="Metasploit%20hashdump%20module.md">Metasploit hashdump module</a>
-Persistence
+<br>Persistence
 └──<a href="Persistenza%20in%20Linux.md">Persistenza in Linux</a>
 </pre>
 
@@ -132,30 +132,30 @@ Persistence
 <pre>
 <a href="Post%20Exploitation%20Modules.md">Windows Post Exploitation Modules</a>
 <a href="Windows%20Local%20enumeration.md">Windows Local Enumeration</a>
-Privilege Escalation
+<br>Privilege Escalation
 ├──<a href="Windows%20Privilege%20Escalation%20Vulnerabilities.md">Windows Privilege Escalation Vulnerabilities</a>
 ├──<a href="UACMe.md">UACMe Bypass</a>
 ├──<a href="Access%20Token%20Impersonation.md">Access Token Impersonation</a>
 │  └──<a href="Potato%20Attack.md">Potato Attack</a>
 ├──<a href="Windows%20Kernel%20Exploit.md">Windows Kernel Exploit</a>
 └──<a href="PowerUp.md">PowerUp</a>
-Persistence
+<br>Persistence
 ├──<a href="Persistence%20on%20windows.md">Persistence on Windows</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Windows%20Persistance%20via%20Services.md">Windwos Persistance Via Services</a>
-Abilitare accessi remoti
+<br>Abilitare accessi remoti
 └──<a href="Enabling%20RDP.md">Enabling RDP</a>
-Keylogging
+<br>Keylogging
 └──<a href="Windows%20Keylogging.md">Windows Keylogging</a>
-Clear Logs
+<br>Clear Logs
 └──<a href="Clearing%20Event%20Log%20Windows.md">Clearing Event Log Windows</a>
-Dump Credenziali / Hash
+<br>Dump Credenziali / Hash
 ├──<a href="Searching%20For%20Passwords%20In%20Windows%20Configuration%20Files.md">Credenziali in Unattend.xml</a>
 ├──<a href="Windows%20Password%20Hashes.md">HASH in Windows</a>
 ├──<a href="Hash%20Dumping%20with%20Mimikatz%20and%20Kiwi.md">Hash Dumping con Mimikatz & Kiwi</a>
 └──<a href="PassTheHashAttack.md">Pass The Hash Attack with PSExec</a>
-Offuscamento Payload
+<br>Offuscamento Payload
 └──<a href="Alternate%20Data%20Stream.md">Alternate Data Stream</a>
-Framework Post-Exploitation
+<br>Framework Post-Exploitation
 └──<a href="Powershell%20Empire.md">Powershell Empire & Starkiller</a>
 </pre>
 
