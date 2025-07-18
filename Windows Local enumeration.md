@@ -31,6 +31,7 @@ whoami /privs                                              # enumerare i permess
 query user                                                 # per visualizzare gli utenti collegati e quando
 net users                                                  # enumerare tutti gli utenti nel sistema
 net user administrator                                     # ottenere informazioni sul account amministratore (possiamo mettere qualisasi nome utente)
+net user Administrator NuovaPassword1234                   # per cambiare la password dell'account administrator se si hanno alti privilegi
 net localgroup                                             # enumerare tutti i gruppi presenti sul sistema
 net localgroup administrators                              # visualizzare i componenti del gruppo administrators (possiamo mettere qualsiasi nome gruppo)
 ```
