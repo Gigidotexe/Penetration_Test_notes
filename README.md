@@ -46,6 +46,8 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ## Social Engineering
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Social%20Engineering%20Introduction.md">Social Engineering Introduction</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Pretexing.md">Pretexting</a>
+<a href="">Gophish</a>    
 </pre>
 
 ---
