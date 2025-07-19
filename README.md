@@ -129,7 +129,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Persistence%20Via%20SSH.md">Linux Persistence Via SSH</a>
 └──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Linux%20Persistence%20Via%20CronJobs.md">Linux Persistence Via CronJobs</a>
 <br>Clear Logs
-└──<a href="">Clear logs on linux</a>
+└──<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Clearing%20log%20on%20linux.md">Clear logs on linux</a>
 </pre>
 
 ### Windows
