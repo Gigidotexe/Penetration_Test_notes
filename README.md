@@ -43,6 +43,13 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 ---
 
+## Social Engineering
+<pre>
+<a href="">Social Engineering Introduction</a>
+</pre>
+
+---
+
 ## 🔥 AV Evasion & Obfuscation
 <pre>
 <a href="AntiVirus%20Evasion%20with%20Shelter%20and%20Invoke-Obfuscation.md">AV Evasion (Shellter & Invoke-Obfuscation)</a>
