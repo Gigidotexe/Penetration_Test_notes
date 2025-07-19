@@ -59,7 +59,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 ---
 
-## 📡 Protocols Specifici & Exploiting
+## 📡 Protocolli Specifici & Exploiting
 <pre>
 <a href="FTP%20(21).md">FTP (21)</a>
 ├──<a href="FTP%20Scan%20and%20Enumeration.md">Scan and Enumeration</a>
