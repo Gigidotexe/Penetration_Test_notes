@@ -22,6 +22,22 @@ La mancata protezione adeguata di dati sensibili (password, token, informazioni 
 Attacchi automatici che tentano migliaia di combinazioni di username/password (brute‑force) o riutilizzano credenziali sottratte da altri data breach (credential stuffing). <br>
 
 **File Upload Vulnerabilities**
-Meccanismi di upload di file insicuri possono permettere l’inserimento di script o binari malevoli sul server, portando a Remote Code Execution o compromissione dell’infrastruttura.
+Meccanismi di upload di file insicuri possono permettere l’inserimento di script o binari malevoli sul server, portando a Remote Code Execution o compromissione dell’infrastruttura. <br>
+
+**Denial‑of‑Service** (DoS) e **Distributed Denial‑of‑Service** (DDoS)
+Attacchi DoS e DDoS mirano a sovraccaricare i server dell’applicazione web con un volume eccessivo di richieste, causando interruzioni del servizio e negando l’accesso agli utenti legittimi. <br>
+
+**Server‑Side Request Forgery** (SSRF)
+L’attaccante induce il server dell’applicazione a effettuare richieste HTTP verso risorse interne o esterne non autorizzate, potenzialmente consentendo furto di dati o accesso a servizi privati. <br>
+
+**Inadequate Access Controls**
+Controlli di accesso deboli possono permettere a utenti non autorizzati di invocare funzionalità riservate o di visualizzare dati sensibili. <br>
+
+**Utilizzo di componenti con vulnerabilità note**
+L’integrazione di librerie, framework o moduli di terze parti affetti da falle di sicurezza già note introduce automaticamente quei punti deboli nell’applicazione web. <br>
+
+**Broken Access Control**
+Meccanismi di autorizzazione difettosi consentono a un attaccante di eludere restrizioni e compiere azioni o accedere a dati per i quali non possiede i permessi necessari. <br>
+
 
 
