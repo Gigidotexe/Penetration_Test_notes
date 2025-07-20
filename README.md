@@ -30,7 +30,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──<a href="Meterpeter.md">Meterpreter</a>
 └──<a href="Metasploit%20hashdump%20module.md">hashdump module</a>
 </pre>
-
+ 
 ---
 
 ## 🧩 Netcat & Shells
