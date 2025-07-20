@@ -115,7 +115,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ## Web Applications
 <pre>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Web%20Applications%20Introduction.md">Web Applications Introduction</a>
-<a href="">Web Applications Testing</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Web%20Application%20Testing.md">Web Applications Testing</a>
 
 </pre>
 
