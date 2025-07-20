@@ -71,7 +71,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 ├──<a href="SSH%20Exploiting.md">Exploiting</a>
 └──<a href="SSH%20Post%20Exploitation.md">Post Exploitation</a>
 
-<a href="HTTP%20(80).md">HTTP (80)</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/HTTP.md">HTTP (80)</a>
 ├──<a href="HTTP%20Scan%20and%20Enumeration.md">Scan and Enumeration</a>
 ├──<a href="HTTP%20Exploiting.md">HTTP Exploiting</a>
 └──Exploiting Specifici
