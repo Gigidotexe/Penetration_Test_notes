@@ -112,6 +112,13 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 
 ---
 
+## Web Applications
+<pre>
+<a href="">Web Application Security Introduction</a>
+</pre>
+
+---
+
 ## 🧰 Post-Exploitation
 <pre>
 <a href="Privilege%20Escalation%20(Introduction).md">Privilege Escalation (Introduction)</a>
