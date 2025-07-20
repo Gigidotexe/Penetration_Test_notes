@@ -118,6 +118,7 @@ Raccolta ordinata dei miei appunti presi durante il percorso formativo per la ce
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Web%20Application%20Testing.md">Web Applications Testing</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Web%20Applications%20Common%20Risks%20and%20Threats.md">Web Applications Common Risks and Threats</a>
 <a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Web%20Application%20Architecture.md">Web Applications Architecture</a>
+<a href="https://github.com/Gigidotexe/Penetration_Test_notes/blob/main/Web%20Applications%20Technologies.md">Web Application Technologies</a>
 </pre>
 
 ---
