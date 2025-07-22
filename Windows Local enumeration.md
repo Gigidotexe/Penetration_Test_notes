@@ -27,7 +27,7 @@ sessions 1
 meterpreter > shell
 # enumerazione utenti manuale
 whoami
-whoami /privs                                              # enumerare i permessi attuali
+whoami /priv                                              # enumerare i permessi attuali
 query user                                                 # per visualizzare gli utenti collegati e quando
 net users                                                  # enumerare tutti gli utenti nel sistema
 net user administrator                                     # ottenere informazioni sul account amministratore (possiamo mettere qualisasi nome utente)
