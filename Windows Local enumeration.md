@@ -42,9 +42,10 @@ Abbiamo anche bisogno di poter enumerare gli attuali indirizzi per poter identif
 meterpreter > shell
 ipconfig
 ipconfig /all
-route print                  # visualizzare la routing table
-arp -a                       # aprire la arp table e visualizzare gli altri host collegati alla stessa rete del target
-netsat -ano                  # per visualizzare la lista dei servizi attualmente in esecuzione o in ascolto
+route print                                                              # visualizzare la routing table
+for /L %i in (1,1,254) do @ping -n 1 -w 100 192.168.0.%i | find "TTL="   # per pingare tutti gli host presenti nella rete 192.168.0.0 (puoi cambiarla)
+arp -a                                                                   # aprire la arp table e visualizzare gli altri host collegati alla stessa rete del target
+netsat -ano                                                               # per visualizzare la lista dei servizi attualmente in esecuzione o in ascolto
 netsh firewall show state
 #oppure
 netsh advfirewall show allprofile
